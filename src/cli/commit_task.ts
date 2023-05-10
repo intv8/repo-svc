@@ -52,7 +52,8 @@ const COMMIT_CODE_REVERSE = Object.fromEntries(
 function getCommitType(cli: Cli): string {
   //  Prompt the user for the commit type
   cli.describe(
-    `Commit types: ${
+    `Commit types:
+${
       Object.keys(COMMIT_TYPES).map((k: string) =>
         ` - ${k}(${COMMIT_CODES[k as keyof typeof COMMIT_CODES]}) = ${
           COMMIT_TYPES[k as keyof typeof COMMIT_TYPES]
@@ -61,7 +62,7 @@ function getCommitType(cli: Cli): string {
     }`,
   );
   const commitType = cli.prompt(
-    `Enter version type (${Object.values(COMMIT_CODES).join("/")})`,
+    `Enter commit type (${Object.values(COMMIT_CODES).join("/")})`,
   );
 
   //  Validate the version type and prompt the user again if it is invalid
@@ -92,6 +93,22 @@ The rest will be used as the commit body.`);
     cli.error("No commit description entered.");
 
     Deno.exit(11);
+  }
+
+  return messages;
+}
+
+function getIssueIds(cli: Cli, messages: string[]): string[] {
+  cli.describe(`Enter issue IDs. Enter a blank line to finish.
+The first line will be used as the commit title.
+The rest will be used as the commit footer.`);
+
+  const line = cli.prompt("Enter issue ID");
+
+  if (line) {
+    messages.push(line);
+
+    return getIssueIds(cli, messages);
   }
 
   return messages;
@@ -140,8 +157,17 @@ export async function commitTask(testing = false, logLevel = 3): Promise<void> {
   //  Get the version type being bumped
   const commitType = getCommitType(cli);
 
+  //  Get the commit scope
+  const scope = cli.prompt("Enter commit scope (optional)");
+
+  //  I the commit breaking
+  const isBreakingChange = cli.promptYesNo("Is this a breaking change? (y/n)");
+
   //  Get the commit descriptions
   const descriptions = getDescriptions(cli, []);
+
+  //  Get the issue IDs
+  const issueIds = getIssueIds(cli, []);
 
   //  Tag the commit with the current version
   const tagWithCurrentVersion = cli.promptYesNo(
@@ -171,9 +197,11 @@ export async function commitTask(testing = false, logLevel = 3): Promise<void> {
   const commitTitle = descriptions.shift();
   const commitMessage = `${
     COMMIT_CODE_REVERSE[commitType as keyof typeof COMMIT_CODE_REVERSE]
-  }(${config.version}): ${commitTitle}${
-    descriptions.length
-      ? `\n\n${descriptions.join("\n").replace('"', '"')}`
+  }${scope ? `(${scope})` : ""}${isBreakingChange ? "!" : ""}: ${commitTitle}${
+    descriptions.length ? `\n${descriptions.join("\n").replace('"', '"')}` : ""
+  }${
+    issueIds.length
+      ? `\n\nRefs: ${issueIds.map((id) => `#${id}`).join(",")}`
       : ""
   }`;
 
