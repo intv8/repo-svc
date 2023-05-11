@@ -112,7 +112,7 @@ export async function initRepoTask(
   }
 
   //  Set root directory to repo root, or if testing to `repo-test` directory
-  const root = testing ? "./repo-test" : "./";
+  const root = testing ? "./repo-test" : ".";
   cli.debug(`Root directory: ${root}`);
   cli.log(`Scaffolding in directory ./${root} (${Deno.cwd()}\\${root})`);
 

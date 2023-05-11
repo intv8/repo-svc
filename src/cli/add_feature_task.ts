@@ -149,7 +149,7 @@ export async function addFeatureTask(
   logLevel = 3,
 ): Promise<void> {
   // Get the root directory of the repo
-  const root = testing ? "./repo-test" : "./";
+  const root = testing ? "./repo-test" : ".";
 
   //  If the deno config file does not exist, throw an error
   if (!await denoConfigExists(root)) {

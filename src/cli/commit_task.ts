@@ -122,7 +122,7 @@ The rest will be used as the commit footer.`);
  */
 export async function commitTask(testing = false, logLevel = 3): Promise<void> {
   //  Get the root directory of the repo
-  const root = testing ? "./repo-test" : "./";
+  const root = testing ? "./repo-test" : ".";
 
   //  If the deno config file does not exist, throw an error
   if (!await denoConfigExists(root)) {

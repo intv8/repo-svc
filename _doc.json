@@ -1,5 +1,341 @@
 [
   {
+    "kind": "function",
+    "name": "createTemplate",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/create_template.ts",
+      "line": 8,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "functionDef": {
+      "params": [
+        {
+          "kind": "identifier",
+          "name": "strings",
+          "optional": false,
+          "tsType": {
+            "repr": "TemplateStringsArray",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "TemplateStringsArray"
+            }
+          }
+        },
+        {
+          "kind": "rest",
+          "arg": {
+            "kind": "identifier",
+            "name": "refs",
+            "optional": false,
+            "tsType": null
+          },
+          "tsType": {
+            "repr": "",
+            "kind": "array",
+            "array": {
+              "repr": "",
+              "kind": "parenthesized",
+              "parenthesized": {
+                "repr": "",
+                "kind": "union",
+                "union": [
+                  {
+                    "repr": "P",
+                    "kind": "typeRef",
+                    "typeRef": {
+                      "typeParams": null,
+                      "typeName": "P"
+                    }
+                  },
+                  {
+                    "repr": "TemplateCallback",
+                    "kind": "typeRef",
+                    "typeRef": {
+                      "typeParams": [
+                        {
+                          "repr": "T",
+                          "kind": "typeRef",
+                          "typeRef": {
+                            "typeParams": null,
+                            "typeName": "T"
+                          }
+                        }
+                      ],
+                      "typeName": "TemplateCallback"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "returnType": {
+        "repr": "TemplateCallback",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "T",
+              "kind": "typeRef",
+              "typeRef": {
+                "typeParams": null,
+                "typeName": "T"
+              }
+            }
+          ],
+          "typeName": "TemplateCallback"
+        }
+      },
+      "isAsync": false,
+      "isGenerator": false,
+      "typeParams": [
+        {
+          "name": "P",
+          "constraint": {
+            "repr": "string",
+            "kind": "keyword",
+            "keyword": "string"
+          }
+        },
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "Props",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "Props"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "import",
+    "name": "Props",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/create_template.ts",
+      "line": 1,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "file:///C:/repos/partic11e/repo-svc/src/types/mod.ts",
+      "imported": "Props"
+    }
+  },
+  {
+    "kind": "import",
+    "name": "TemplateCallback",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/create_template.ts",
+      "line": 1,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "file:///C:/repos/partic11e/repo-svc/src/types/mod.ts",
+      "imported": "TemplateCallback"
+    }
+  },
+  {
+    "kind": "function",
+    "name": "parseArgs",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/parse_args.ts",
+      "line": 3,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "functionDef": {
+      "params": [
+        {
+          "kind": "identifier",
+          "name": "args",
+          "optional": false,
+          "tsType": {
+            "repr": "",
+            "kind": "array",
+            "array": {
+              "repr": "string",
+              "kind": "keyword",
+              "keyword": "string"
+            }
+          }
+        }
+      ],
+      "returnType": {
+        "repr": "",
+        "kind": "typeLiteral",
+        "typeLiteral": {
+          "methods": [],
+          "properties": [
+            {
+              "name": "testing",
+              "params": [],
+              "computed": false,
+              "optional": false,
+              "tsType": {
+                "repr": "boolean",
+                "kind": "keyword",
+                "keyword": "boolean"
+              },
+              "typeParams": []
+            },
+            {
+              "name": "logLevel",
+              "params": [],
+              "computed": false,
+              "optional": false,
+              "tsType": {
+                "repr": "number",
+                "kind": "keyword",
+                "keyword": "number"
+              },
+              "typeParams": []
+            }
+          ],
+          "callSignatures": [],
+          "indexSignatures": []
+        }
+      },
+      "isAsync": false,
+      "isGenerator": false,
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "import",
+    "name": "parse",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/parse_args.ts",
+      "line": 1,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "file:///C:/repos/partic11e/repo-svc/deps.ts",
+      "imported": "parse"
+    }
+  },
+  {
+    "kind": "function",
+    "name": "checkPermissions",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/check_permissions.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "functionDef": {
+      "params": [
+        {
+          "kind": "identifier",
+          "name": "permissions",
+          "optional": false,
+          "tsType": {
+            "repr": "",
+            "kind": "array",
+            "array": {
+              "repr": "Deno.PermissionDescriptor",
+              "kind": "typeRef",
+              "typeRef": {
+                "typeParams": null,
+                "typeName": "Deno.PermissionDescriptor"
+              }
+            }
+          }
+        }
+      ],
+      "returnType": {
+        "repr": "Promise",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "boolean",
+              "kind": "keyword",
+              "keyword": "boolean"
+            }
+          ],
+          "typeName": "Promise"
+        }
+      },
+      "isAsync": true,
+      "isGenerator": false,
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "function",
+    "name": "printAsciiBanner",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/print_ascii_banner.ts",
+      "line": 38,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Prints a formatted partic11e banner with a tool name.\n",
+      "tags": [
+        {
+          "kind": "param",
+          "name": "name",
+          "doc": "The name of the tool to print in the banner."
+        }
+      ]
+    },
+    "functionDef": {
+      "params": [
+        {
+          "kind": "identifier",
+          "name": "name",
+          "optional": false,
+          "tsType": {
+            "repr": "string",
+            "kind": "keyword",
+            "keyword": "string"
+          }
+        }
+      ],
+      "returnType": {
+        "repr": "void",
+        "kind": "keyword",
+        "keyword": "void"
+      },
+      "isAsync": false,
+      "isGenerator": false,
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "import",
+    "name": "colors",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/print_ascii_banner.ts",
+      "line": 8,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "jsDoc": {
+      "doc": "This file exports the printAsciiBanner function.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@copyright 2022 integer11. All rights reserved. MIT license."
+        }
+      ]
+    },
+    "importDef": {
+      "src": "file:///C:/repos/partic11e/repo-svc/deps.ts",
+      "imported": "colors"
+    }
+  },
+  {
     "kind": "typeAlias",
     "name": "TemplateCallback",
     "location": {
@@ -524,10 +860,10 @@
   },
   {
     "kind": "function",
-    "name": "checkPermissions",
+    "name": "createFilename",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/check_permissions.ts",
-      "line": 15,
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/create_filename.ts",
+      "line": 9,
       "col": 0
     },
     "declarationKind": "export",
@@ -535,262 +871,23 @@
       "params": [
         {
           "kind": "identifier",
-          "name": "permissions",
+          "name": "name",
           "optional": false,
           "tsType": {
-            "repr": "",
-            "kind": "array",
-            "array": {
-              "repr": "Deno.PermissionDescriptor",
-              "kind": "typeRef",
-              "typeRef": {
-                "typeParams": null,
-                "typeName": "Deno.PermissionDescriptor"
-              }
-            }
-          }
-        }
-      ],
-      "returnType": {
-        "repr": "Promise",
-        "kind": "typeRef",
-        "typeRef": {
-          "typeParams": [
-            {
-              "repr": "boolean",
-              "kind": "keyword",
-              "keyword": "boolean"
-            }
-          ],
-          "typeName": "Promise"
-        }
-      },
-      "isAsync": true,
-      "isGenerator": false,
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "function",
-    "name": "createTemplate",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/create_template.ts",
-      "line": 8,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "functionDef": {
-      "params": [
-        {
-          "kind": "identifier",
-          "name": "strings",
-          "optional": false,
-          "tsType": {
-            "repr": "TemplateStringsArray",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "TemplateStringsArray"
-            }
-          }
-        },
-        {
-          "kind": "rest",
-          "arg": {
-            "kind": "identifier",
-            "name": "refs",
-            "optional": false,
-            "tsType": null
-          },
-          "tsType": {
-            "repr": "",
-            "kind": "array",
-            "array": {
-              "repr": "",
-              "kind": "parenthesized",
-              "parenthesized": {
-                "repr": "",
-                "kind": "union",
-                "union": [
-                  {
-                    "repr": "P",
-                    "kind": "typeRef",
-                    "typeRef": {
-                      "typeParams": null,
-                      "typeName": "P"
-                    }
-                  },
-                  {
-                    "repr": "TemplateCallback",
-                    "kind": "typeRef",
-                    "typeRef": {
-                      "typeParams": [
-                        {
-                          "repr": "T",
-                          "kind": "typeRef",
-                          "typeRef": {
-                            "typeParams": null,
-                            "typeName": "T"
-                          }
-                        }
-                      ],
-                      "typeName": "TemplateCallback"
-                    }
-                  }
-                ]
-              }
-            }
-          }
-        }
-      ],
-      "returnType": {
-        "repr": "TemplateCallback",
-        "kind": "typeRef",
-        "typeRef": {
-          "typeParams": [
-            {
-              "repr": "T",
-              "kind": "typeRef",
-              "typeRef": {
-                "typeParams": null,
-                "typeName": "T"
-              }
-            }
-          ],
-          "typeName": "TemplateCallback"
-        }
-      },
-      "isAsync": false,
-      "isGenerator": false,
-      "typeParams": [
-        {
-          "name": "P",
-          "constraint": {
             "repr": "string",
             "kind": "keyword",
             "keyword": "string"
           }
-        },
-        {
-          "name": "T",
-          "constraint": {
-            "repr": "Props",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "Props"
-            }
-          }
-        }
-      ]
-    }
-  },
-  {
-    "kind": "import",
-    "name": "Props",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/create_template.ts",
-      "line": 1,
-      "col": 0
-    },
-    "declarationKind": "private",
-    "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/types/mod.ts",
-      "imported": "Props"
-    }
-  },
-  {
-    "kind": "import",
-    "name": "TemplateCallback",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/create_template.ts",
-      "line": 1,
-      "col": 0
-    },
-    "declarationKind": "private",
-    "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/types/mod.ts",
-      "imported": "TemplateCallback"
-    }
-  },
-  {
-    "kind": "function",
-    "name": "parseArgs",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/parse_args.ts",
-      "line": 3,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "functionDef": {
-      "params": [
-        {
-          "kind": "identifier",
-          "name": "args",
-          "optional": false,
-          "tsType": {
-            "repr": "",
-            "kind": "array",
-            "array": {
-              "repr": "string",
-              "kind": "keyword",
-              "keyword": "string"
-            }
-          }
         }
       ],
       "returnType": {
-        "repr": "",
-        "kind": "typeLiteral",
-        "typeLiteral": {
-          "methods": [],
-          "properties": [
-            {
-              "name": "testing",
-              "params": [],
-              "computed": false,
-              "optional": false,
-              "tsType": {
-                "repr": "boolean",
-                "kind": "keyword",
-                "keyword": "boolean"
-              },
-              "typeParams": []
-            },
-            {
-              "name": "logLevel",
-              "params": [],
-              "computed": false,
-              "optional": false,
-              "tsType": {
-                "repr": "number",
-                "kind": "keyword",
-                "keyword": "number"
-              },
-              "typeParams": []
-            }
-          ],
-          "callSignatures": [],
-          "indexSignatures": []
-        }
+        "repr": "string",
+        "kind": "keyword",
+        "keyword": "string"
       },
       "isAsync": false,
       "isGenerator": false,
       "typeParams": []
-    }
-  },
-  {
-    "kind": "import",
-    "name": "parse",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/parse_args.ts",
-      "line": 1,
-      "col": 0
-    },
-    "declarationKind": "private",
-    "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/deps.ts",
-      "imported": "parse"
     }
   },
   {
@@ -815,204 +912,6 @@
         }
       },
       "kind": "const"
-    }
-  },
-  {
-    "kind": "function",
-    "name": "printAsciiBanner",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/print_ascii_banner.ts",
-      "line": 38,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Prints a formatted partic11e banner with a tool name.\n",
-      "tags": [
-        {
-          "kind": "param",
-          "name": "name",
-          "doc": "The name of the tool to print in the banner."
-        }
-      ]
-    },
-    "functionDef": {
-      "params": [
-        {
-          "kind": "identifier",
-          "name": "name",
-          "optional": false,
-          "tsType": {
-            "repr": "string",
-            "kind": "keyword",
-            "keyword": "string"
-          }
-        }
-      ],
-      "returnType": {
-        "repr": "void",
-        "kind": "keyword",
-        "keyword": "void"
-      },
-      "isAsync": false,
-      "isGenerator": false,
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "import",
-    "name": "colors",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/print_ascii_banner.ts",
-      "line": 8,
-      "col": 0
-    },
-    "declarationKind": "private",
-    "jsDoc": {
-      "doc": "This file exports the printAsciiBanner function.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@copyright 2022 integer11. All rights reserved. MIT license."
-        }
-      ]
-    },
-    "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/deps.ts",
-      "imported": "colors"
-    }
-  },
-  {
-    "kind": "function",
-    "name": "commitTask",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/commit_task.ts",
-      "line": 123,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "This function helps generate a commit message, optionally prompting the user to commit.\n",
-      "tags": [
-        {
-          "kind": "param",
-          "name": "testing",
-          "doc": "Whether or not the task is being run in a test environment."
-        },
-        {
-          "kind": "param",
-          "name": "logLevel",
-          "doc": "The log level to use."
-        }
-      ]
-    },
-    "functionDef": {
-      "params": [
-        {
-          "kind": "assign",
-          "left": {
-            "kind": "identifier",
-            "name": "testing",
-            "optional": false,
-            "tsType": null
-          },
-          "right": "[UNSUPPORTED]",
-          "tsType": null
-        },
-        {
-          "kind": "assign",
-          "left": {
-            "kind": "identifier",
-            "name": "logLevel",
-            "optional": false,
-            "tsType": null
-          },
-          "right": "[UNSUPPORTED]",
-          "tsType": null
-        }
-      ],
-      "returnType": {
-        "repr": "Promise",
-        "kind": "typeRef",
-        "typeRef": {
-          "typeParams": [
-            {
-              "repr": "void",
-              "kind": "keyword",
-              "keyword": "void"
-            }
-          ],
-          "typeName": "Promise"
-        }
-      },
-      "isAsync": true,
-      "isGenerator": false,
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "import",
-    "name": "checkPermissions",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/commit_task.ts",
-      "line": 8,
-      "col": 0
-    },
-    "declarationKind": "private",
-    "jsDoc": {
-      "doc": "This file exports exports the get_commit cli task.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@copyright 2022 integer11. All rights reserved. MIT license."
-        }
-      ]
-    },
-    "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/check_permissions.ts",
-      "imported": "checkPermissions"
-    }
-  },
-  {
-    "kind": "import",
-    "name": "denoConfigExists",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/commit_task.ts",
-      "line": 11,
-      "col": 0
-    },
-    "declarationKind": "private",
-    "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
-      "imported": "denoConfigExists"
-    }
-  },
-  {
-    "kind": "import",
-    "name": "readDenoConfig",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/commit_task.ts",
-      "line": 11,
-      "col": 0
-    },
-    "declarationKind": "private",
-    "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
-      "imported": "readDenoConfig"
-    }
-  },
-  {
-    "kind": "import",
-    "name": "Cli",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/commit_task.ts",
-      "line": 14,
-      "col": 0
-    },
-    "declarationKind": "private",
-    "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/cli.ts",
-      "imported": "Cli"
     }
   },
   {
@@ -1230,6 +1129,286 @@
     "importDef": {
       "src": "file:///C:/repos/partic11e/repo-svc/deps.ts",
       "imported": "exists"
+    }
+  },
+  {
+    "kind": "function",
+    "name": "bumpVersionTask",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/bump_version_task.ts",
+      "line": 54,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "This function bumps the version in the deno config file and version file.\n",
+      "tags": [
+        {
+          "kind": "param",
+          "name": "testing",
+          "doc": "Whether or not the task is being run in a test environment."
+        },
+        {
+          "kind": "param",
+          "name": "logLevel",
+          "doc": "The log level to use."
+        }
+      ]
+    },
+    "functionDef": {
+      "params": [
+        {
+          "kind": "assign",
+          "left": {
+            "kind": "identifier",
+            "name": "testing",
+            "optional": false,
+            "tsType": null
+          },
+          "right": "[UNSUPPORTED]",
+          "tsType": null
+        },
+        {
+          "kind": "assign",
+          "left": {
+            "kind": "identifier",
+            "name": "logLevel",
+            "optional": false,
+            "tsType": null
+          },
+          "right": "[UNSUPPORTED]",
+          "tsType": null
+        }
+      ],
+      "returnType": {
+        "repr": "Promise",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "void",
+              "kind": "keyword",
+              "keyword": "void"
+            }
+          ],
+          "typeName": "Promise"
+        }
+      },
+      "isAsync": true,
+      "isGenerator": false,
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "import",
+    "name": "checkPermissions",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/bump_version_task.ts",
+      "line": 8,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "jsDoc": {
+      "doc": "This file exports exports the bump_version cli task.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@copyright 2022 integer11. All rights reserved. MIT license."
+        }
+      ]
+    },
+    "importDef": {
+      "src": "file:///C:/repos/partic11e/repo-svc/src/check_permissions.ts",
+      "imported": "checkPermissions"
+    }
+  },
+  {
+    "kind": "import",
+    "name": "denoConfigExists",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/bump_version_task.ts",
+      "line": 11,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
+      "imported": "denoConfigExists"
+    }
+  },
+  {
+    "kind": "import",
+    "name": "readDenoConfig",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/bump_version_task.ts",
+      "line": 11,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
+      "imported": "readDenoConfig"
+    }
+  },
+  {
+    "kind": "import",
+    "name": "writeDenoConfig",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/bump_version_task.ts",
+      "line": 11,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
+      "imported": "writeDenoConfig"
+    }
+  },
+  {
+    "kind": "import",
+    "name": "Cli",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/bump_version_task.ts",
+      "line": 18,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "file:///C:/repos/partic11e/repo-svc/src/cli.ts",
+      "imported": "Cli"
+    }
+  },
+  {
+    "kind": "function",
+    "name": "commitTask",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/commit_task.ts",
+      "line": 123,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "This function helps generate a commit message, optionally prompting the user to commit.\n",
+      "tags": [
+        {
+          "kind": "param",
+          "name": "testing",
+          "doc": "Whether or not the task is being run in a test environment."
+        },
+        {
+          "kind": "param",
+          "name": "logLevel",
+          "doc": "The log level to use."
+        }
+      ]
+    },
+    "functionDef": {
+      "params": [
+        {
+          "kind": "assign",
+          "left": {
+            "kind": "identifier",
+            "name": "testing",
+            "optional": false,
+            "tsType": null
+          },
+          "right": "[UNSUPPORTED]",
+          "tsType": null
+        },
+        {
+          "kind": "assign",
+          "left": {
+            "kind": "identifier",
+            "name": "logLevel",
+            "optional": false,
+            "tsType": null
+          },
+          "right": "[UNSUPPORTED]",
+          "tsType": null
+        }
+      ],
+      "returnType": {
+        "repr": "Promise",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "void",
+              "kind": "keyword",
+              "keyword": "void"
+            }
+          ],
+          "typeName": "Promise"
+        }
+      },
+      "isAsync": true,
+      "isGenerator": false,
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "import",
+    "name": "checkPermissions",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/commit_task.ts",
+      "line": 8,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "jsDoc": {
+      "doc": "This file exports exports the get_commit cli task.\n",
+      "tags": [
+        {
+          "kind": "unsupported",
+          "value": "@copyright 2022 integer11. All rights reserved. MIT license."
+        }
+      ]
+    },
+    "importDef": {
+      "src": "file:///C:/repos/partic11e/repo-svc/src/check_permissions.ts",
+      "imported": "checkPermissions"
+    }
+  },
+  {
+    "kind": "import",
+    "name": "denoConfigExists",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/commit_task.ts",
+      "line": 11,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
+      "imported": "denoConfigExists"
+    }
+  },
+  {
+    "kind": "import",
+    "name": "readDenoConfig",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/commit_task.ts",
+      "line": 11,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
+      "imported": "readDenoConfig"
+    }
+  },
+  {
+    "kind": "import",
+    "name": "Cli",
+    "location": {
+      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/commit_task.ts",
+      "line": 14,
+      "col": 0
+    },
+    "declarationKind": "private",
+    "importDef": {
+      "src": "file:///C:/repos/partic11e/repo-svc/src/cli.ts",
+      "imported": "Cli"
     }
   },
   {
@@ -1916,185 +2095,6 @@
     "importDef": {
       "src": "file:///C:/repos/partic11e/repo-svc/src/types/mod.ts",
       "imported": "PackageProps"
-    }
-  },
-  {
-    "kind": "function",
-    "name": "bumpVersionTask",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/bump_version_task.ts",
-      "line": 54,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "This function bumps the version in the deno config file and version file.\n",
-      "tags": [
-        {
-          "kind": "param",
-          "name": "testing",
-          "doc": "Whether or not the task is being run in a test environment."
-        },
-        {
-          "kind": "param",
-          "name": "logLevel",
-          "doc": "The log level to use."
-        }
-      ]
-    },
-    "functionDef": {
-      "params": [
-        {
-          "kind": "assign",
-          "left": {
-            "kind": "identifier",
-            "name": "testing",
-            "optional": false,
-            "tsType": null
-          },
-          "right": "[UNSUPPORTED]",
-          "tsType": null
-        },
-        {
-          "kind": "assign",
-          "left": {
-            "kind": "identifier",
-            "name": "logLevel",
-            "optional": false,
-            "tsType": null
-          },
-          "right": "[UNSUPPORTED]",
-          "tsType": null
-        }
-      ],
-      "returnType": {
-        "repr": "Promise",
-        "kind": "typeRef",
-        "typeRef": {
-          "typeParams": [
-            {
-              "repr": "void",
-              "kind": "keyword",
-              "keyword": "void"
-            }
-          ],
-          "typeName": "Promise"
-        }
-      },
-      "isAsync": true,
-      "isGenerator": false,
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "import",
-    "name": "checkPermissions",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/bump_version_task.ts",
-      "line": 8,
-      "col": 0
-    },
-    "declarationKind": "private",
-    "jsDoc": {
-      "doc": "This file exports exports the bump_version cli task.\n",
-      "tags": [
-        {
-          "kind": "unsupported",
-          "value": "@copyright 2022 integer11. All rights reserved. MIT license."
-        }
-      ]
-    },
-    "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/check_permissions.ts",
-      "imported": "checkPermissions"
-    }
-  },
-  {
-    "kind": "import",
-    "name": "denoConfigExists",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/bump_version_task.ts",
-      "line": 11,
-      "col": 0
-    },
-    "declarationKind": "private",
-    "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
-      "imported": "denoConfigExists"
-    }
-  },
-  {
-    "kind": "import",
-    "name": "readDenoConfig",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/bump_version_task.ts",
-      "line": 11,
-      "col": 0
-    },
-    "declarationKind": "private",
-    "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
-      "imported": "readDenoConfig"
-    }
-  },
-  {
-    "kind": "import",
-    "name": "writeDenoConfig",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/bump_version_task.ts",
-      "line": 11,
-      "col": 0
-    },
-    "declarationKind": "private",
-    "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
-      "imported": "writeDenoConfig"
-    }
-  },
-  {
-    "kind": "import",
-    "name": "Cli",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/bump_version_task.ts",
-      "line": 18,
-      "col": 0
-    },
-    "declarationKind": "private",
-    "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/cli.ts",
-      "imported": "Cli"
-    }
-  },
-  {
-    "kind": "function",
-    "name": "createFilename",
-    "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/create_filename.ts",
-      "line": 9,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "functionDef": {
-      "params": [
-        {
-          "kind": "identifier",
-          "name": "name",
-          "optional": false,
-          "tsType": {
-            "repr": "string",
-            "kind": "keyword",
-            "keyword": "string"
-          }
-        }
-      ],
-      "returnType": {
-        "repr": "string",
-        "kind": "keyword",
-        "keyword": "string"
-      },
-      "isAsync": false,
-      "isGenerator": false,
-      "typeParams": []
     }
   }
 ]
