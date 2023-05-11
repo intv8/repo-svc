@@ -18,11 +18,12 @@ export async function getRepoDetails(): Promise<[string, string]> {
   const cmd = new Deno.Command("git", {
     args: ["remote", "-v"],
     stdout: "piped",
-    stdin: "piped",
   });
 
+  const p = cmd.spawn();
+
   //  Get the output of the git command
-  const { stdout } = await cmd.output();
+  const { stdout } = await p.output();
   const outStr = DEC.decode(stdout);
   const [line] = outStr.split("\n");
 
