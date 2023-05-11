@@ -137,7 +137,6 @@ export async function initRepoTask(
       },
     });
 
-    console.log(json);
     config = JSON.parse(json);
   }
 
