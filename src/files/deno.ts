@@ -45,7 +45,7 @@ export const denoJsonc = createTemplate<PackagePropsPath, PackageProps>`{
     "cache": "deno cache --reload --lock=lock.json --lock-write deps.ts"
   },
   "imports": {
-    "std/": "https://deno.land/std@0.184.0/",
+    "std/": "https://deno.land/std@0.186.0/",
     "p11/": "https://denopkg.com/partic11e/"
   }
 }

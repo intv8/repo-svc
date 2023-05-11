@@ -5,8 +5,8 @@ export const srcTypesInterfacesTs = createTemplate<
   PackagePropsPath,
   PackageProps
 >`/**
- * This file exports interfaces used by the the partic11e ${"pkg.name"} pkg
- * and its peer and dependant pkgs.
+ * This file exports interfaces used by the the partic11e ${"pkg.name"} package
+ * and its peer and dependant packages.
  *
  * For type aliases, see ./types.ts.
  *

@@ -3,7 +3,7 @@ import type { PackageProps, PackagePropsPath } from "../types/mod.ts";
 
 export const devDepsTs = createTemplate<PackagePropsPath, PackageProps>`/**
  * This file re-exports external development dependencies used by the partic11e
- * ${"pkg.name"}.
+ * ${"pkg.name"} package.
  *
  * @copyright 2022 integer11. All rights reserved. MIT license.
  */

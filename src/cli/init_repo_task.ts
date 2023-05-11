@@ -123,21 +123,24 @@ export async function initRepoTask(
   let config = await readDenoConfig(root);
 
   //  If deno.jsonc is empty, initialize it with default values
-  if (!Object.keys(config).length) {
-    const json = denoJsonc({
-      pkg: {
-        description: "",
-        name: repo,
-        status: "unstable",
-        version: "0.0.1",
-      },
-      meta: {
-        date: new Date().toISOString(),
-        year: (new Date().getFullYear()).toString(),
-      },
-    });
+  const json = denoJsonc({
+    pkg: {
+      description: "",
+      name: repo,
+      status: "unstable",
+      version: "0.0.1",
+    },
+    meta: {
+      date: new Date().toISOString(),
+      year: (new Date().getFullYear()).toString(),
+    },
+  });
+  const parsedJson = JSON.parse(json);
 
-    config = JSON.parse(json);
+  if (!Object.keys(config).length) {
+    config = parsedJson;
+  } else {
+    config = { ...parsedJson, ...config };
   }
 
   cli.debug(`Repo: ${org}/${repo}`);

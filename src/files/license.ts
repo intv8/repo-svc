@@ -1,8 +1,10 @@
 import { createTemplate } from "../create_template.ts";
 import type { PackageProps, PackagePropsPath } from "../types/mod.ts";
 
-export const license = createTemplate<PackagePropsPath, PackageProps>
-  `MIT License
+export const license = createTemplate<
+  PackagePropsPath,
+  PackageProps
+>`MIT License
 
 Copyright (c) 2022 integer11
 

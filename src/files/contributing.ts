@@ -1,8 +1,10 @@
 import { createTemplate } from "../create_template.ts";
 import type { PackageProps, PackagePropsPath } from "../types/mod.ts";
 
-export const contributing = createTemplate<PackagePropsPath, PackageProps>
-  `# Contributing
+export const contributing = createTemplate<
+  PackagePropsPath,
+  PackageProps
+>`# Contributing
 
 Thank you for your interest in contributing to the partic11e libraries. There
 are multiple ways to contribute, including reporting or resolving issues,

@@ -2,7 +2,7 @@ import { createTemplate } from "../create_template.ts";
 import type { PackageProps, PackagePropsPath } from "../types/mod.ts";
 
 export const depsTs = createTemplate<PackagePropsPath, PackageProps>`/**
- * This file re-exports external dependencies used by the partic11e ${"pkg.name"}.
+ * This file re-exports external dependencies used by the partic11e ${"pkg.name"} package.
  *
  * @copyright 2022 integer11. All rights reserved. MIT license.
  */

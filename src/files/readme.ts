@@ -1,8 +1,10 @@
 import { createTemplate } from "../create_template.ts";
 import type { PackageProps, PackagePropsPath } from "../types/mod.ts";
 
-export const readme = createTemplate<PackagePropsPath, PackageProps>
-  `<p align="center">
+export const readme = createTemplate<
+  PackagePropsPath,
+  PackageProps
+>`<p align="center">
 <!-- Update log -->
 <img alt="partic11e logo" height="70" src="https://raw.githubusercontent.com/partic11e/.github/main/profile/img/logotype.svg" />
 <strong>${"pkg.name"}</strong>
