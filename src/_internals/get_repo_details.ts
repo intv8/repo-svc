@@ -16,14 +16,14 @@ export async function getRepoDetails(): Promise<[string, string]> {
   //  Run the git command to get the remote url
   const regex = /([\w\-]+)\/([\w\-]+)\.git/;
   const cmd = new Deno.Command("git", {
-    cmd: ["remote", "-v"],
+    args: ["remote", "-v"],
     stdout: "piped",
     stdin: "piped",
   });
 
   //  Get the output of the git command
-  const output = await cmd.output();
-  const outStr = DEC.decode(output);
+  const { stdout } = await cmd.output();
+  const outStr = DEC.decode(stdout);
   const [line] = outStr.split("\n");
 
   //  Parse the output of the git command

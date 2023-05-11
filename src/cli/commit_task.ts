@@ -186,7 +186,6 @@ export async function commitTask(testing = false, logLevel = 3): Promise<void> {
       cli.success(`Tagged commit with v${config.version}.`);
     } else {
       cli.error(`Failed to tag commit with v${config.version}.`);
-      cli.error(new TextDecoder().decode(await tagStatus.stderr));
       cli.log(
         `Use the following command to tag manually:\n\n\tgit tag v${config.version}`,
       );
@@ -235,8 +234,6 @@ export async function commitTask(testing = false, logLevel = 3): Promise<void> {
 
   if (!commitStatus.success) {
     cli.error("Failed to commit changes.");
-    cli.error(new TextDecoder().decode(await commitStatus.stderr));
-
     cli.log(
       `Use the following command to commit manually:\n\n\tgit commit -a -m "${commitMessage}"`,
     );
