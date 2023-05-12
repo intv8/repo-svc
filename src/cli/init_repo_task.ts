@@ -26,6 +26,7 @@ import {
   denoJsonc,
   depsTs,
   devDepsTs,
+  importMapJson,
   license,
   readme,
   rootModTs,
@@ -62,6 +63,7 @@ const FILE_MAP = {
   "LICENSE": license,
   "README.md": readme,
   "CONTRIBUTING.md": contributing,
+  "import_map.json": importMapJson,
 };
 
 //  The permissions required by this task.

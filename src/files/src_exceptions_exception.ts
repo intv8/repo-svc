@@ -34,7 +34,7 @@ export type ${"feature.name"}Init = TExceptionInit<{
  * @param init The ${"feature.name"}Init properties.
  * @returns The message created from the provided ${"feature.name"}Init properties.
  */
-function createMsgFromInit (init: ${"feature.name"}Init): string {
+function createMsgFromInit(init: ${"feature.name"}Init): string {
   //  TODO: create message from provided init properties.
   //  e.g.
   //  const { prop1, prop2 } = init;
@@ -54,7 +54,7 @@ function createMsgFromInit (init: ${"feature.name"}Init): string {
 /**
  * ${"feature.description"}
  */
-export class ${"feature.name"}Exception<T extends ${"feature.name"}Init = ${"feature.name"}Init> extends Exception<T> {
+export class ${"feature.name"}<T extends ${"feature.name"}Init = ${"feature.name"}Init> extends Exception<T> {
   /**
    * Creates a new ${"feature.name"} exception with the default message and no exception init properties.
    */
@@ -84,7 +84,7 @@ export class ${"feature.name"}Exception<T extends ${"feature.name"}Init = ${"fea
 
     if (typeof msgOrInit !== "string") {
       init = msgOrInit;
-      message = msgFromInit(init);
+      message = createMsgFromInit(init);
     }
 
     super(message, init);
@@ -93,6 +93,6 @@ export class ${"feature.name"}Exception<T extends ${"feature.name"}Init = ${"fea
   /**
    * The exception code for the ${"feature.name"} exception.
    */
-  public code: number = ${"exception.code"};
+  public code = 0x${"exception.code"};
 }
 `;

@@ -208,7 +208,7 @@ export async function addExceptionTask(
       description: featureDescription,
     },
     exception: {
-      code: exceptionCode.toString(2),
+      code: exceptionCode.toString(16),
       message: exceptionMessage,
     },
   };

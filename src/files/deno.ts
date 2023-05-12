@@ -43,10 +43,6 @@ export const denoJsonc = createTemplate<PackagePropsPath, PackageProps>`{
     "commit": "deno run -A https://denopkg.com/partic11e/repo-svc/cli/commit.ts",
     "pre-commit": "deno fmt && deno lint && deno test && deno doc ./mod.ts --json > _doc.json",
     "cache": "deno cache --reload --lock=lock.json --lock-write deps.ts"
-  },
-  "imports": {
-    "std/": "https://deno.land/std@0.186.0/",
-    "p11/": "https://denopkg.com/partic11e/"
   }
 }
 `;

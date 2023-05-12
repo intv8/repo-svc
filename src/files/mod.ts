@@ -5,6 +5,7 @@ export * from "./deno.ts";
 export * from "./deps.ts";
 export * from "./dev_deps.ts";
 export * from "./func_feature.ts";
+export * from "./import_map.ts";
 export * from "./license.ts";
 export * from "./readme.ts";
 export * from "./root_mod.ts";
