@@ -24,6 +24,7 @@ import { exists } from "../../deps.ts";
 import {
   contributing,
   denoJsonc,
+  denoWorkflow,
   depsTs,
   devDepsTs,
   importMapJson,
@@ -64,6 +65,7 @@ const FILE_MAP = {
   "README.md": readme,
   "CONTRIBUTING.md": contributing,
   "import_map.json": importMapJson,
+  ".github/workflows/deno.yml": denoWorkflow,
 };
 
 //  The permissions required by this task.

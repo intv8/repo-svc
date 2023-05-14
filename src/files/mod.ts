@@ -2,6 +2,7 @@ export * from "./class_feature.ts";
 export * from "./contributing.ts";
 export * from "./decorator_feature.ts";
 export * from "./deno.ts";
+export * from "./deno_workflow.ts";
 export * from "./deps.ts";
 export * from "./dev_deps.ts";
 export * from "./func_feature.ts";
