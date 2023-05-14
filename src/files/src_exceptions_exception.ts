@@ -14,7 +14,7 @@ export const srcExceptionsExceptionTs = createTemplate<
 import { Exception } from "../../deps.ts";
 
 //  Import exception init type
-export type { TExceptionInit } from "../../deps.ts";
+import type { TExceptionInit } from "../../deps.ts";
 
 /**
  * The default message for the ${"feature.name"} exception.
@@ -78,7 +78,8 @@ export class ${"feature.name"}<T extends ${"feature.name"}Init = ${"feature.name
   constructor(message: string, init?: T);
 
   //  Constructor overload implementation
-  constructor(msgOrInit: string | T = DEFAULT_MSG, maybeInit?: T) {
+  // deno-lint-ignore default-param-last
+  constructor(msgOrInit: string | T = DEFAULT_MESSAGE, maybeInit?: T) {
     let message: string = msgOrInit as string;
     let init: T | undefined = maybeInit;
 

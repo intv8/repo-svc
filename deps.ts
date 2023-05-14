@@ -5,10 +5,10 @@
  */
 
 //  For formatting console output
-export * as colors from "https://deno.land/std@0.185.0/fmt/colors.ts";
+export * as colors from "std/fmt/colors.ts";
 
 //  For parsing command line arguments
-export { parse } from "https://deno.land/std@0.185.0/flags/mod.ts";
+export { parse } from "std/flags/mod.ts";
 
 //  For checking if a file exists
-export { exists } from "https://deno.land/std@0.185.0/fs/exists.ts";
+export { exists } from "std/fs/exists.ts";

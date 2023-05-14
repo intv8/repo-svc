@@ -252,10 +252,10 @@ export async function addExceptionTask(
   await Deno.writeTextFile(`${root}/tests/${fileName}.test.ts`, testContent);
 
   cli.debug(
-    `Writing test fixture to ${root}/tests/fixtures/${fileName}.fixture.ts`,
+    `Writing test fixture to ${root}/tests/fixtures/${fileName}.fixtures.ts`,
   );
   await Deno.writeTextFile(
-    `${root}/tests/fixtures/${fileName}.fixture.ts`,
+    `${root}/tests/fixtures/${fileName}.fixtures.ts`,
     testFixtureContent,
   );
 
