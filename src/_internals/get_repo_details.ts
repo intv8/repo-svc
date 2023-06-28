@@ -14,7 +14,7 @@ const DEC = new TextDecoder("utf-8");
  */
 export async function getRepoDetails(): Promise<[string, string]> {
   //  Run the git command to get the remote url
-  const regex = /([\w\-]+)\/([\w\-]+)\.git/;
+  const regex = /\/([\w\-]+)\/([\w\-]+)/;
   const cmd = new Deno.Command("git", {
     args: ["remote", "-v"],
     stdout: "piped",
