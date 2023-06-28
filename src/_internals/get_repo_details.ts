@@ -26,6 +26,7 @@ export async function getRepoDetails(): Promise<[string, string]> {
   const { stdout } = await p.output();
   const outStr = DEC.decode(stdout);
   const [line] = outStr.split("\n");
+  console.log(`Extracting git output from:\n${outStr}`);
 
   //  Parse the output of the git command
   const matches = regex.exec(line || "");
