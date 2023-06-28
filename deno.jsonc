@@ -40,6 +40,5 @@
     "pre-commit": "deno fmt && deno lint && deno doc ./mod.ts --json > _doc.json",
     "commit": "deno run -A ./cli/commit.ts",
     "cache": "deno cache --reload --lock=lock.json --lock-write deps.ts"
-  },
-  "importMap": "./import_map.json"
+  }
 }
