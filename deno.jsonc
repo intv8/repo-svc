@@ -1,0 +1,44 @@
+{
+  "name": "repo-svc",
+  "description": "",
+  "version": "0.0.1",
+  "author": "integer11",
+  "license": "MIT",
+  "status": "unstable",
+  "lint": {
+    "rules": {
+      "tags": [
+        "recommended"
+      ],
+      "include": [
+        "ban-untagged-todo",
+        "camelcase",
+        "default-param-last",
+        "eqeqeq",
+        "explicit-function-return-type",
+        "explicit-module-boundary-types",
+        "no-throw-literal"
+      ]
+    }
+  },
+  "fmt": {
+    "files": {
+      "exclude": [
+        "**/vendor/**",
+        "**/build/**"
+      ]
+    },
+    "options": {
+      "indentWidth": 2,
+      "lineWidth": 80,
+      "proseWrap": "preserve",
+      "useTabs": false,
+      "singleQuote": false
+    }
+  },
+  "tasks": {
+    "pre-commit": "deno fmt && deno lint && deno doc ./mod.ts --json > _doc.json",
+    "commit": "deno run -A ./cli/commit.ts",
+    "cache": "deno cache --reload --lock=lock.json --lock-write deps.ts"
+  }
+}
