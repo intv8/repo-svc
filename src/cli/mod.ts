@@ -1,10 +1,9 @@
 /**
- * This file exports the cli tasks of the partic11e repo-svc package.
+ * This file exports the cli tasks of the intv8 repo-svc package.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
-//  Export tasks
 export * from "./add_exception_task.ts";
 export * from "./add_feature_task.ts";
 export * from "./bump_version_task.ts";

@@ -1,14 +1,11 @@
 /**
- * This file re-exports external dependencies used by the partic11e repo-svc.
+ * This file re-exports external dependencies used by the intv8 repo-svc.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
-//  For formatting console output
-export * as colors from "https://deno.land/std@0.184.0/fmt/colors.ts";
+export * as colors from "https://deno.land/std@0.203.0/fmt/colors.ts";
 
-//  For parsing command line arguments
-export { parse } from "https://deno.land/std@0.184.0/flags/mod.ts";
+export { parse } from "https://deno.land/std@0.203.0/flags/mod.ts";
 
-//  For checking if a file exists
-export { exists } from "https://deno.land/std@0.184.0/fs/exists.ts";
+export { exists } from "https://deno.land/std@0.203.0/fs/exists.ts";

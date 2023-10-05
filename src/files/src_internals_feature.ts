@@ -7,6 +7,6 @@ export const srcInternalsFeatureTs = createTemplate<
 >`/**
  * This file exports the internal ${"feature.name"} ${"feature.type"} and related features.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 `;

@@ -7,14 +7,10 @@ export const srcExceptionsExceptionTs = createTemplate<
 >`/**
  * This file exports the ${"feature.name"} exception and related features.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
-//  Import base exception
-import { Exception } from "../../deps.ts";
-
-//  Import exception init type
-import type { TExceptionInit } from "../../deps.ts";
+import { Exception, type BaseExceptionInit } from "../../deps.ts";
 
 /**
  * The default message for the ${"feature.name"} exception.

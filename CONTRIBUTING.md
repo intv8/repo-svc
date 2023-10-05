@@ -1,22 +1,22 @@
 # Contributing
 
-Thank you for your interest in contributing to the partic11e libraries. There
+Thank you for your interest in contributing to the intv8 libraries. There
 are multiple ways to contribute, including reporting or resolving issues,
 requesting or adding new features, improving documentation, creating guides,
 adding translations, and more.
 
 ## Found an issue?
 
-If you find an issue in a partic11e libraries source code, you can help by
+If you find an issue in a intv8 libraries source code, you can help by
 [submitting an issue][issues] to its GitHub Repository. If you have a fix for
 the issue, you can submit a Pull Request.
 
 ## Want a feature?
 
 You can request a new feature in a library by [submitting an issue][feature] to
-a partic11e library's GitHub Repository. If you are unsure which library a
+a intv8 library's GitHub Repository. If you are unsure which library a
 feature should be requested in, you can [submit an issue][feature-new] on the
-`partic11e/please` repo.
+`intv8/please` repo.
 
 ## What you need to know
 
@@ -100,7 +100,7 @@ git push origin branch-name-here
 ## Commit messages
 
 We follow the [Conventional Commits][conventional-commit] commit message
-convention. The core partic11e libraries do not have any scopes.
+convention. The core intv8 libraries do not have any scopes.
 
 Commit messages should be structured like this:
 
@@ -140,9 +140,9 @@ project with respect and courtesy.
 [typescript]: https://www.typescriptlang.org/docs "TypeScript: The JavaScript superset for the future"
 [deno]: https://deno.land "Deno: A modern web platform for writing JavaScript"
 [conventional-commit]: https://www.conventionalcommits.org/en/v1.0.0/ "Conventional Commits: A guide to commit messages"
-[code-of-conduct]: https://github.com/partic11e/.github/blob/main/.github/CODE_OF_CONDUCT.md "Contributor Code of Conduct"
-[feature-new]: https://github.com/partic11e/please/issues/new?template=feature.yaml&title= "Request a new feature in partic11e"
-[issues]: https://github.com/partic11e/repo-svc/issues/new?template=issue.yaml&title= "Report an issue in partic11e/repo-svc"
-[feature]: https://github.com/partic11e/repo-svc/issues/new?template=feature.md&title= "Request a new feature in partic11e/repo-svc"
-[documentation]: https://github.com/partic11e/repo-svc/labels/type%3A%20docs "Documentation issues in partic11e/repo-svc"
-[first-issue]: https://github.com/partic11e/repo-svc/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22 "Good first issues in partic11e/repo-svc"
+[code-of-conduct]: https://github.com/intv8/.github/blob/main/.github/CODE_OF_CONDUCT.md "Contributor Code of Conduct"
+[feature-new]: https://github.com/intv8/please/issues/new?template=feature.yaml&title= "Request a new feature in intv8"
+[issues]: https://github.com/intv8/repo-svc/issues/new?template=issue.yaml&title= "Report an issue in intv8/repo-svc"
+[feature]: https://github.com/intv8/repo-svc/issues/new?template=feature.md&title= "Request a new feature in intv8/repo-svc"
+[documentation]: https://github.com/intv8/repo-svc/labels/type%3A%20docs "Documentation issues in intv8/repo-svc"
+[first-issue]: https://github.com/intv8/repo-svc/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22 "Good first issues in intv8/repo-svc"

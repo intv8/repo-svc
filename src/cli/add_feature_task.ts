@@ -1,19 +1,16 @@
 /**
  * This file exports exports the add_feature cli task.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
-//  For checking Deno permissions.
 import { checkPermissions } from "../check_permissions.ts";
-
-//  For creating the feature file name from the feature name.
 import { createFilename } from "../create_filename.ts";
-
-//  For reading the deno config file.
 import { denoConfigExists, readDenoConfig } from "../_internals/mod.ts";
+import { srcModTsEntry } from "../partials/mod.ts";
+import { Cli } from "../cli.ts";
+import { exists } from "../../deps.ts";
 
-//  For creating the feature file content.
 import {
   classFeature,
   decoratorFeature,
@@ -24,16 +21,7 @@ import {
   testsFixturesFixtureTs,
 } from "../files/mod.ts";
 
-//  For creating the feature mod file export content.
-import { srcModTsEntry } from "../partials/mod.ts";
 
-//  For creating the cli.
-import { Cli } from "../cli.ts";
-
-//  For checking if a file exists.
-import { exists } from "../../deps.ts";
-
-//  The permissions required by this task.
 const PERMISSIONS: Deno.PermissionDescriptor[] = [
   {
     name: "read",
@@ -66,13 +54,11 @@ const FEATURE_CONTENTS = {
 } as const;
 
 function getFeatureType(cli: Cli): FeatureType {
-  //  Get the feature type from the user
   cli.describe(
     "Enter a value matching the following: Class=c, Function=f, Decorator=d",
   );
   const featureType = cli.prompt("Enter feature type");
 
-  //  Validate the feature type and prompt the user again if it is invalid
   if (!featureType) {
     cli.error("Invalid feature type.");
 
@@ -85,7 +71,6 @@ function getFeatureType(cli: Cli): FeatureType {
     return getFeatureType(cli);
   }
 
-  //  Return the feature type
   return featureType as FeatureType;
 }
 
@@ -96,11 +81,9 @@ function getFeatureType(cli: Cli): FeatureType {
  * @returns The feature name.
  */
 function getFeatureName(cli: Cli, featureType: FeatureType): string {
-  //  Get the feature name from the user
   cli.describe(FEATURE_DESCRIPTIONS[featureType]);
   const featureName = cli.prompt("Enter feature name");
 
-  //  Validate the feature name and prompt the user again if it is invalid
   if (!featureName) {
     cli.error("Invalid feature name.");
 
@@ -113,7 +96,6 @@ function getFeatureName(cli: Cli, featureType: FeatureType): string {
     return getFeatureName(cli, featureType);
   }
 
-  //  Return the feature name
   return featureName;
 }
 
@@ -124,17 +106,14 @@ function getFeatureName(cli: Cli, featureType: FeatureType): string {
  * @returns The feature description.
  */
 function getFeatureDescription(cli: Cli): string {
-  //  Get the feature description from the user
   const featureDescription = cli.prompt("Enter feature description");
 
-  //  Validate the feature description and prompt the user again if it is invalid
   if (!featureDescription) {
     cli.error("Invalid feature description.");
 
     return getFeatureDescription(cli);
   }
 
-  //  Return the feature description
   return featureDescription;
 }
 
@@ -148,31 +127,25 @@ export async function addFeatureTask(
   testing = false,
   logLevel = 3,
 ): Promise<void> {
-  // Get the root directory of the repo
   const root = testing ? "./repo-test" : ".";
 
-  //  If the deno config file does not exist, throw an error
   if (!await denoConfigExists(root)) {
     throw new Error(
       "Deno config does not exist. Please initialize a project first.",
     );
   }
 
-  //  Read the deno config file
   const config = await readDenoConfig(root);
 
-  //  Create the cli
   const cli = new Cli("EXC", {
     logLevel: logLevel,
     rgb24Color: 0x156AFF,
     displayName: "feature scaffolding",
   });
 
-  //  Print the cli banner
   cli.printBanner();
-  cli.describe("partic11e feature tool.");
+  cli.describe("intv8 feature tool.");
 
-  //  Check the permissions required by this task, and exit if they are not accepted
   const permissionsAccepted = await checkPermissions(PERMISSIONS);
 
   if (!permissionsAccepted) {
@@ -181,7 +154,6 @@ export async function addFeatureTask(
     Deno.exit(10);
   }
 
-  //  Get the exception name, description, message, and code from the user
   const featureType = getFeatureType(cli);
   const featureName = getFeatureName(cli, featureType);
   const featureDescription = getFeatureDescription(cli);
@@ -189,7 +161,6 @@ export async function addFeatureTask(
 
   const dir = isInternal ? `${root}/src/_internals` : `${root}/src`;
 
-  //  Create the props object for the exception file
   const props = {
     meta: {
       date: new Date().toISOString(),
@@ -208,7 +179,6 @@ export async function addFeatureTask(
     },
   };
 
-  //  Create the feature file content and the feature mod file entry
   const fileHeader = isInternal
     ? srcInternalsFeatureTs(props)
     : srcFeatureTs(props);
@@ -217,17 +187,13 @@ ${FEATURE_CONTENTS[featureType](props)}`;
 
   const modEntry = srcModTsEntry(props);
 
-  //  Create the feature file name and path
   const fileName = createFilename(featureName);
   const filePath = `${dir}/${fileName}.ts`;
   const modPath = `${dir}/mod.ts`;
 
   const testContent = testsFeatureTs(props);
   const testFixtureContent = testsFixturesFixtureTs(props);
-
-  //  Check if the feature file already exists
-  //  If it does, prompt the user to overwrite it
-  //  If they do not want to overwrite it, exit
+  
   if (await exists(filePath)) {
     cli.warn(`${featureName} ${featureName} already exists.`);
 
@@ -240,14 +206,12 @@ ${FEATURE_CONTENTS[featureType](props)}`;
     }
   }
 
-  //  Write the feature file and add the feature to the mod file
   cli.debug(`Writing feature to ${filePath}`);
   await Deno.writeTextFile(filePath, content);
 
   cli.debug(`Adding feature to mod file: ${modPath}`);
   await Deno.writeTextFile(modPath, modEntry, { append: true });
 
-  //  Write test fixture and test files
   cli.debug(`Writing test to ${root}/tests/${fileName}.test.ts`);
   await Deno.writeTextFile(`${root}/tests/${fileName}.test.ts`, testContent);
 
@@ -259,7 +223,6 @@ ${FEATURE_CONTENTS[featureType](props)}`;
     testFixtureContent,
   );
 
-  //  Print the success message
   cli.done(`Feature ${featureName} created at ${filePath}.`);
   cli.describe("Review generated feature and resolve any TODOs.");
 }

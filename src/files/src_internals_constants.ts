@@ -5,9 +5,9 @@ export const srcInternalsConstantsTs = createTemplate<
   PackagePropsPath,
   PackageProps
 >`/**
- * This file exports internal constants used by the partic11e ${"pkg.name"} package.
+ * This file exports internal constants used by the intv8 ${"pkg.name"} package.
  * Constants exported here should not be exposed to the public API.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 `;

@@ -6,6 +6,5 @@ export const srcInternalsModTsEntry = createTemplate<
   ExceptionPropsPath,
   ExceptionProps
 >`
-//  Export internal feature ${"feature.name"} and related features.
 export * from "./${({ feature }) => createFilename(feature.name)}.ts";
 `;
