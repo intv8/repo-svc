@@ -71,7 +71,6 @@ export class Cli {
     return response;
   }
 
-  //  2
   public log(message: string): void {
     if (this.options.logLevel < 2) return;
 
@@ -90,28 +89,24 @@ export class Cli {
     console.warn(`${this.printName()} ${colors.yellow(message)}`);
   }
 
-  //  3
   public info(message: string): void {
     if (this.options.logLevel < 3) return;
 
     console.info(`${this.printName()} ${colors.blue(message)}`);
   }
 
-  //  4
   public debug(message: string): void {
     if (this.options.logLevel < 4) return;
 
     console.debug(`${this.printName()} ${colors.gray(message)}`);
   }
 
-  //  5
   public trace(message: string): void {
     if (this.options.logLevel < 5) return;
 
     console.trace(`${this.printName()} ${colors.gray(message)}`);
   }
 
-  //  1
   public success(message: string): void {
     if (this.options.logLevel < 1) return;
 

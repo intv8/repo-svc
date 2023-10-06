@@ -1,19 +1,13 @@
 /**
  * This file exports exports the get_commit cli task.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
-//  For checking Deno permissions.
 import { checkPermissions } from "../check_permissions.ts";
-
-//  For reading and writing the deno config.
 import { denoConfigExists, readDenoConfig } from "../_internals/mod.ts";
-
-//  For creating the cli.
 import { Cli } from "../cli.ts";
 
-//  The permissions required by this task.
 const PERMISSIONS: Deno.PermissionDescriptor[] = [
   {
     name: "run",
@@ -50,7 +44,6 @@ const COMMIT_CODE_REVERSE = Object.fromEntries(
 );
 
 function getCommitType(cli: Cli): string {
-  //  Prompt the user for the commit type
   cli.describe(
     `Commit types:
 ${
@@ -65,14 +58,12 @@ ${
     `Enter commit type (${Object.values(COMMIT_CODES).join("/")})`,
   );
 
-  //  Validate the version type and prompt the user again if it is invalid
   if (!commitType || !Object.values(COMMIT_CODES).includes(commitType)) {
     cli.error("Invalid commit type.");
 
     Deno.exit(11);
   }
 
-  //  Return the version type
   return commitType;
 }
 
@@ -121,31 +112,25 @@ The rest will be used as the commit footer.`);
  * @param logLevel The log level to use.
  */
 export async function commitTask(testing = false, logLevel = 3): Promise<void> {
-  //  Get the root directory of the repo
   const root = testing ? "./repo-test" : ".";
 
-  //  If the deno config file does not exist, throw an error
   if (!await denoConfigExists(root)) {
     throw new Error(
       "Deno config does not exist. Please initialize a project first.",
     );
   }
 
-  //  Read the deno config file
   const config = await readDenoConfig(root);
 
-  //  Create the cli
   const cli = new Cli("COMMIT", {
     logLevel: logLevel,
     rgb24Color: 0x156AFF,
     displayName: "project commit creation",
   });
 
-  //  Print the cli banner
   cli.printBanner();
-  cli.describe("partic11e repo commit tool.");
+  cli.describe("intv8 repo commit tool.");
 
-  //  Check the permissions required by this task, and exit if they are not accepted
   const permissionsAccepted = await checkPermissions(PERMISSIONS);
 
   if (!permissionsAccepted) {
@@ -154,22 +139,16 @@ export async function commitTask(testing = false, logLevel = 3): Promise<void> {
     Deno.exit(10);
   }
 
-  //  Get the version type being bumped
   const commitType = getCommitType(cli);
 
-  //  Get the commit scope
   const scope = cli.prompt("Enter commit scope (optional)");
 
-  //  I the commit breaking
   const isBreakingChange = cli.promptYesNo("Is this a breaking change? (y/n)");
 
-  //  Get the commit descriptions
   const descriptions = getDescriptions(cli, []);
 
-  //  Get the issue IDs
   const issueIds = getIssueIds(cli, []);
 
-  //  Tag the commit with the current version
   const tagWithCurrentVersion = cli.promptYesNo(
     "Tag commit with current version? (y/n)",
   );
@@ -194,7 +173,6 @@ export async function commitTask(testing = false, logLevel = 3): Promise<void> {
     }
   }
 
-  //  Create the commit message
   const commitTitle = descriptions.shift();
   const commitMessage = `${
     COMMIT_CODE_REVERSE[commitType as keyof typeof COMMIT_CODE_REVERSE]
@@ -206,13 +184,10 @@ export async function commitTask(testing = false, logLevel = 3): Promise<void> {
       : ""
   }`;
 
-  //  Print the commit message
   cli.info(`Commit message:\n${commitMessage}`);
 
-  //  Prompt the user to commit
   const commit = cli.promptYesNo("Commit? (y/n)");
 
-  //  If the user does not want to commit, exit
   if (!commit) {
     cli.error("Commit aborted.");
 
@@ -223,7 +198,6 @@ export async function commitTask(testing = false, logLevel = 3): Promise<void> {
     Deno.exit(11);
   }
 
-  //  Commit the changes
   cli.info("Committing changes...");
   const commitProcess = new Deno.Command("git", {
     args: ["commit", "-a", "-m", commitMessage],
@@ -241,6 +215,5 @@ export async function commitTask(testing = false, logLevel = 3): Promise<void> {
     Deno.exit(11);
   }
 
-  //  Print the success message
   cli.done("Commit successful.");
 }

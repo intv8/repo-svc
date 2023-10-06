@@ -1,7 +1,7 @@
 /**
  * This file contains the add feature cli task.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
 //  Import the addFeatureTask function and parseArgs function

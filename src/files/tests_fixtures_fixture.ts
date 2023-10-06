@@ -11,8 +11,6 @@ export const testsFixturesFixtureTs = createTemplate<
  *
  * For use in ../${({ feature }) => createFilename(feature.name)}.test.ts.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
-
-//  Re-export features, stubs, mocks, and/or fixtures.
 `;

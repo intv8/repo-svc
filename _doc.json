@@ -3,7 +3,7 @@
     "kind": "function",
     "name": "checkPermissions",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/check_permissions.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/check_permissions.ts",
       "line": 15,
       "col": 0
     },
@@ -52,17 +52,17 @@
     "kind": "typeAlias",
     "name": "TemplateCallback",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/types/types.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/types/types.ts",
       "line": 10,
       "col": 0
     },
     "declarationKind": "export",
     "jsDoc": {
-      "doc": "This file exports type aliases used by the the partic11e repo-svc package\nand its peer and dependant packages.\n\nFor interfaces, see ./interfaces.ts\n",
+      "doc": "This file exports type aliases used by the the intv8 repo-svc package\nand its peer and dependant packages.\n\nFor interfaces, see ./interfaces.ts\n",
       "tags": [
         {
           "kind": "unsupported",
-          "value": "@copyright 2022 integer11. All rights reserved. MIT license."
+          "value": "@copyright 2022 integereleven. All rights reserved. MIT license."
         }
       ]
     },
@@ -114,7 +114,7 @@
     "kind": "typeAlias",
     "name": "Props",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/types/types.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/types/types.ts",
       "line": 23,
       "col": 0
     },
@@ -158,7 +158,7 @@
     "kind": "typeAlias",
     "name": "PackageProps",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/types/types.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/types/types.ts",
       "line": 35,
       "col": 0
     },
@@ -262,7 +262,7 @@
     "kind": "typeAlias",
     "name": "PackagePropsPath",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/types/types.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/types/types.ts",
       "line": 44,
       "col": 0
     },
@@ -309,7 +309,7 @@
     "kind": "typeAlias",
     "name": "FeatureProps",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/types/types.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/types/types.ts",
       "line": 46,
       "col": 0
     },
@@ -401,7 +401,7 @@
     "kind": "typeAlias",
     "name": "FeaturePropsPath",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/types/types.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/types/types.ts",
       "line": 54,
       "col": 0
     },
@@ -448,7 +448,7 @@
     "kind": "typeAlias",
     "name": "ExceptionProps",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/types/types.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/types/types.ts",
       "line": 56,
       "col": 0
     },
@@ -528,7 +528,7 @@
     "kind": "typeAlias",
     "name": "ExceptionPropsPath",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/types/types.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/types/types.ts",
       "line": 63,
       "col": 0
     },
@@ -575,7 +575,7 @@
     "kind": "function",
     "name": "parseArgs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/parse_args.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/parse_args.ts",
       "line": 3,
       "col": 0
     },
@@ -642,13 +642,13 @@
     "kind": "import",
     "name": "parse",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/parse_args.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/parse_args.ts",
       "line": 1,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/deps.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/deps.ts",
       "imported": "parse"
     }
   },
@@ -656,13 +656,13 @@
     "kind": "variable",
     "name": "VERSION",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/version.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/version.ts",
       "line": 11,
       "col": 13
     },
     "declarationKind": "export",
     "jsDoc": {
-      "doc": "The current release version of the partic11e repo-svc package."
+      "doc": "The current release version of the intv8 repo-svc package."
     },
     "variableDef": {
       "tsType": {
@@ -680,7 +680,7 @@
     "kind": "function",
     "name": "createTemplate",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/create_template.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/create_template.ts",
       "line": 8,
       "col": 0
     },
@@ -796,13 +796,13 @@
     "kind": "import",
     "name": "Props",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/create_template.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/create_template.ts",
       "line": 1,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/types/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/types/mod.ts",
       "imported": "Props"
     }
   },
@@ -810,13 +810,13 @@
     "kind": "import",
     "name": "TemplateCallback",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/create_template.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/create_template.ts",
       "line": 1,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/types/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/types/mod.ts",
       "imported": "TemplateCallback"
     }
   },
@@ -824,7 +824,7 @@
     "kind": "function",
     "name": "commitTask",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/commit_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/commit_task.ts",
       "line": 123,
       "col": 0
     },
@@ -893,7 +893,7 @@
     "kind": "import",
     "name": "checkPermissions",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/commit_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/commit_task.ts",
       "line": 8,
       "col": 0
     },
@@ -903,12 +903,12 @@
       "tags": [
         {
           "kind": "unsupported",
-          "value": "@copyright 2022 integer11. All rights reserved. MIT license."
+          "value": "@copyright 2022 integereleven. All rights reserved. MIT license."
         }
       ]
     },
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/check_permissions.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/check_permissions.ts",
       "imported": "checkPermissions"
     }
   },
@@ -916,13 +916,13 @@
     "kind": "import",
     "name": "denoConfigExists",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/commit_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/commit_task.ts",
       "line": 11,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/_internals/mod.ts",
       "imported": "denoConfigExists"
     }
   },
@@ -930,13 +930,13 @@
     "kind": "import",
     "name": "readDenoConfig",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/commit_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/commit_task.ts",
       "line": 11,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/_internals/mod.ts",
       "imported": "readDenoConfig"
     }
   },
@@ -944,13 +944,13 @@
     "kind": "import",
     "name": "Cli",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/commit_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/commit_task.ts",
       "line": 14,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/cli.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/cli.ts",
       "imported": "Cli"
     }
   },
@@ -958,7 +958,7 @@
     "kind": "function",
     "name": "bumpVersionTask",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/bump_version_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/bump_version_task.ts",
       "line": 54,
       "col": 0
     },
@@ -1027,7 +1027,7 @@
     "kind": "import",
     "name": "checkPermissions",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/bump_version_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/bump_version_task.ts",
       "line": 8,
       "col": 0
     },
@@ -1037,12 +1037,12 @@
       "tags": [
         {
           "kind": "unsupported",
-          "value": "@copyright 2022 integer11. All rights reserved. MIT license."
+          "value": "@copyright 2022 integereleven. All rights reserved. MIT license."
         }
       ]
     },
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/check_permissions.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/check_permissions.ts",
       "imported": "checkPermissions"
     }
   },
@@ -1050,13 +1050,13 @@
     "kind": "import",
     "name": "denoConfigExists",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/bump_version_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/bump_version_task.ts",
       "line": 11,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/_internals/mod.ts",
       "imported": "denoConfigExists"
     }
   },
@@ -1064,13 +1064,13 @@
     "kind": "import",
     "name": "readDenoConfig",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/bump_version_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/bump_version_task.ts",
       "line": 11,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/_internals/mod.ts",
       "imported": "readDenoConfig"
     }
   },
@@ -1078,13 +1078,13 @@
     "kind": "import",
     "name": "writeDenoConfig",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/bump_version_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/bump_version_task.ts",
       "line": 11,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/_internals/mod.ts",
       "imported": "writeDenoConfig"
     }
   },
@@ -1092,13 +1092,13 @@
     "kind": "import",
     "name": "Cli",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/bump_version_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/bump_version_task.ts",
       "line": 18,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/cli.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/cli.ts",
       "imported": "Cli"
     }
   },
@@ -1106,7 +1106,7 @@
     "kind": "function",
     "name": "addFeatureTask",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_feature_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_feature_task.ts",
       "line": 147,
       "col": 0
     },
@@ -1175,7 +1175,7 @@
     "kind": "import",
     "name": "checkPermissions",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_feature_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_feature_task.ts",
       "line": 8,
       "col": 0
     },
@@ -1185,12 +1185,12 @@
       "tags": [
         {
           "kind": "unsupported",
-          "value": "@copyright 2022 integer11. All rights reserved. MIT license."
+          "value": "@copyright 2022 integereleven. All rights reserved. MIT license."
         }
       ]
     },
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/check_permissions.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/check_permissions.ts",
       "imported": "checkPermissions"
     }
   },
@@ -1198,13 +1198,13 @@
     "kind": "import",
     "name": "createFilename",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_feature_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_feature_task.ts",
       "line": 11,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/create_filename.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/create_filename.ts",
       "imported": "createFilename"
     }
   },
@@ -1212,13 +1212,13 @@
     "kind": "import",
     "name": "denoConfigExists",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_feature_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_feature_task.ts",
       "line": 14,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/_internals/mod.ts",
       "imported": "denoConfigExists"
     }
   },
@@ -1226,13 +1226,13 @@
     "kind": "import",
     "name": "readDenoConfig",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_feature_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_feature_task.ts",
       "line": 14,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/_internals/mod.ts",
       "imported": "readDenoConfig"
     }
   },
@@ -1240,13 +1240,13 @@
     "kind": "import",
     "name": "classFeature",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_feature_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_feature_task.ts",
       "line": 17,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "classFeature"
     }
   },
@@ -1254,13 +1254,13 @@
     "kind": "import",
     "name": "decoratorFeature",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_feature_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_feature_task.ts",
       "line": 17,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "decoratorFeature"
     }
   },
@@ -1268,13 +1268,13 @@
     "kind": "import",
     "name": "funcFeature",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_feature_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_feature_task.ts",
       "line": 17,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "funcFeature"
     }
   },
@@ -1282,13 +1282,13 @@
     "kind": "import",
     "name": "srcFeatureTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_feature_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_feature_task.ts",
       "line": 17,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "srcFeatureTs"
     }
   },
@@ -1296,13 +1296,13 @@
     "kind": "import",
     "name": "srcInternalsFeatureTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_feature_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_feature_task.ts",
       "line": 17,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "srcInternalsFeatureTs"
     }
   },
@@ -1310,13 +1310,13 @@
     "kind": "import",
     "name": "testsFeatureTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_feature_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_feature_task.ts",
       "line": 17,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "testsFeatureTs"
     }
   },
@@ -1324,13 +1324,13 @@
     "kind": "import",
     "name": "testsFixturesFixtureTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_feature_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_feature_task.ts",
       "line": 17,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "testsFixturesFixtureTs"
     }
   },
@@ -1338,13 +1338,13 @@
     "kind": "import",
     "name": "srcModTsEntry",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_feature_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_feature_task.ts",
       "line": 28,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/partials/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/partials/mod.ts",
       "imported": "srcModTsEntry"
     }
   },
@@ -1352,13 +1352,13 @@
     "kind": "import",
     "name": "Cli",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_feature_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_feature_task.ts",
       "line": 31,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/cli.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/cli.ts",
       "imported": "Cli"
     }
   },
@@ -1366,13 +1366,13 @@
     "kind": "import",
     "name": "exists",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_feature_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_feature_task.ts",
       "line": 34,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/deps.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/deps.ts",
       "imported": "exists"
     }
   },
@@ -1380,13 +1380,13 @@
     "kind": "function",
     "name": "initRepoTask",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 93,
       "col": 0
     },
     "declarationKind": "export",
     "jsDoc": {
-      "doc": "This function initializes a repo with the partic11e repo scaffold.\n",
+      "doc": "This function initializes a repo with the intv8 repo scaffold.\n",
       "tags": [
         {
           "kind": "param",
@@ -1449,7 +1449,7 @@
     "kind": "import",
     "name": "checkPermissions",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 8,
       "col": 0
     },
@@ -1459,12 +1459,12 @@
       "tags": [
         {
           "kind": "unsupported",
-          "value": "@copyright 2022 integer11. All rights reserved. MIT license."
+          "value": "@copyright 2022 integereleven. All rights reserved. MIT license."
         }
       ]
     },
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/check_permissions.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/check_permissions.ts",
       "imported": "checkPermissions"
     }
   },
@@ -1472,13 +1472,13 @@
     "kind": "import",
     "name": "getRepoDetails",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 11,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/_internals/mod.ts",
       "imported": "getRepoDetails"
     }
   },
@@ -1486,13 +1486,13 @@
     "kind": "import",
     "name": "readDenoConfig",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 11,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/_internals/mod.ts",
       "imported": "readDenoConfig"
     }
   },
@@ -1500,13 +1500,13 @@
     "kind": "import",
     "name": "writeDenoConfig",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 11,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/_internals/mod.ts",
       "imported": "writeDenoConfig"
     }
   },
@@ -1514,13 +1514,13 @@
     "kind": "import",
     "name": "Cli",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 18,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/cli.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/cli.ts",
       "imported": "Cli"
     }
   },
@@ -1528,13 +1528,13 @@
     "kind": "import",
     "name": "exists",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 21,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/deps.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/deps.ts",
       "imported": "exists"
     }
   },
@@ -1542,13 +1542,13 @@
     "kind": "import",
     "name": "contributing",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "contributing"
     }
   },
@@ -1556,13 +1556,13 @@
     "kind": "import",
     "name": "denoJsonc",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "denoJsonc"
     }
   },
@@ -1570,13 +1570,13 @@
     "kind": "import",
     "name": "denoWorkflow",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "denoWorkflow"
     }
   },
@@ -1584,13 +1584,13 @@
     "kind": "import",
     "name": "depsTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "depsTs"
     }
   },
@@ -1598,13 +1598,13 @@
     "kind": "import",
     "name": "devDepsTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "devDepsTs"
     }
   },
@@ -1612,13 +1612,13 @@
     "kind": "import",
     "name": "importMapJson",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "importMapJson"
     }
   },
@@ -1626,13 +1626,13 @@
     "kind": "import",
     "name": "license",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "license"
     }
   },
@@ -1640,13 +1640,13 @@
     "kind": "import",
     "name": "readme",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "readme"
     }
   },
@@ -1654,13 +1654,13 @@
     "kind": "import",
     "name": "rootModTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "rootModTs"
     }
   },
@@ -1668,13 +1668,13 @@
     "kind": "import",
     "name": "srcConstants",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "srcConstants"
     }
   },
@@ -1682,13 +1682,13 @@
     "kind": "import",
     "name": "srcExceptionModTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "srcExceptionModTs"
     }
   },
@@ -1696,13 +1696,13 @@
     "kind": "import",
     "name": "srcInternalsConstantsTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "srcInternalsConstantsTs"
     }
   },
@@ -1710,13 +1710,13 @@
     "kind": "import",
     "name": "srcInternalsModTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "srcInternalsModTs"
     }
   },
@@ -1724,13 +1724,13 @@
     "kind": "import",
     "name": "srcModTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "srcModTs"
     }
   },
@@ -1738,13 +1738,13 @@
     "kind": "import",
     "name": "srcTypesEnumsTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "srcTypesEnumsTs"
     }
   },
@@ -1752,13 +1752,13 @@
     "kind": "import",
     "name": "srcTypesInterfacesTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "srcTypesInterfacesTs"
     }
   },
@@ -1766,13 +1766,13 @@
     "kind": "import",
     "name": "srcTypesModTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "srcTypesModTs"
     }
   },
@@ -1780,13 +1780,13 @@
     "kind": "import",
     "name": "srcTypesTypesTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "srcTypesTypesTs"
     }
   },
@@ -1794,13 +1794,13 @@
     "kind": "import",
     "name": "srcVersionTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "srcVersionTs"
     }
   },
@@ -1808,13 +1808,13 @@
     "kind": "import",
     "name": "PackageProps",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/init_repo_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
       "line": 47,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/types/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/types/mod.ts",
       "imported": "PackageProps"
     }
   },
@@ -1822,7 +1822,7 @@
     "kind": "function",
     "name": "addExceptionTask",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_exception_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_exception_task.ts",
       "line": 150,
       "col": 0
     },
@@ -1891,7 +1891,7 @@
     "kind": "import",
     "name": "checkPermissions",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_exception_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_exception_task.ts",
       "line": 8,
       "col": 0
     },
@@ -1901,12 +1901,12 @@
       "tags": [
         {
           "kind": "unsupported",
-          "value": "@copyright 2022 integer11. All rights reserved. MIT license."
+          "value": "@copyright 2022 integereleven. All rights reserved. MIT license."
         }
       ]
     },
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/check_permissions.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/check_permissions.ts",
       "imported": "checkPermissions"
     }
   },
@@ -1914,13 +1914,13 @@
     "kind": "import",
     "name": "createFilename",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_exception_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_exception_task.ts",
       "line": 11,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/create_filename.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/create_filename.ts",
       "imported": "createFilename"
     }
   },
@@ -1928,13 +1928,13 @@
     "kind": "import",
     "name": "denoConfigExists",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_exception_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_exception_task.ts",
       "line": 14,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/_internals/mod.ts",
       "imported": "denoConfigExists"
     }
   },
@@ -1942,13 +1942,13 @@
     "kind": "import",
     "name": "readDenoConfig",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_exception_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_exception_task.ts",
       "line": 14,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/_internals/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/_internals/mod.ts",
       "imported": "readDenoConfig"
     }
   },
@@ -1956,13 +1956,13 @@
     "kind": "import",
     "name": "srcExceptionsExceptionTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_exception_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_exception_task.ts",
       "line": 17,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "srcExceptionsExceptionTs"
     }
   },
@@ -1970,13 +1970,13 @@
     "kind": "import",
     "name": "testsFeatureTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_exception_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_exception_task.ts",
       "line": 17,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "testsFeatureTs"
     }
   },
@@ -1984,13 +1984,13 @@
     "kind": "import",
     "name": "testsFixturesFixtureTs",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_exception_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_exception_task.ts",
       "line": 17,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/files/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/files/mod.ts",
       "imported": "testsFixturesFixtureTs"
     }
   },
@@ -1998,13 +1998,13 @@
     "kind": "import",
     "name": "srcExceptionsModTsEntry",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_exception_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_exception_task.ts",
       "line": 24,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/partials/mod.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/partials/mod.ts",
       "imported": "srcExceptionsModTsEntry"
     }
   },
@@ -2012,13 +2012,13 @@
     "kind": "import",
     "name": "Cli",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_exception_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_exception_task.ts",
       "line": 27,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/src/cli.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/src/cli.ts",
       "imported": "Cli"
     }
   },
@@ -2026,13 +2026,13 @@
     "kind": "import",
     "name": "exists",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/cli/add_exception_task.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_exception_task.ts",
       "line": 30,
       "col": 0
     },
     "declarationKind": "private",
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/deps.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/deps.ts",
       "imported": "exists"
     }
   },
@@ -2040,13 +2040,13 @@
     "kind": "function",
     "name": "printAsciiBanner",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/print_ascii_banner.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/print_ascii_banner.ts",
       "line": 38,
       "col": 0
     },
     "declarationKind": "export",
     "jsDoc": {
-      "doc": "Prints a formatted partic11e banner with a tool name.\n",
+      "doc": "Prints a formatted intv8 banner with a tool name.\n",
       "tags": [
         {
           "kind": "param",
@@ -2083,7 +2083,7 @@
     "kind": "import",
     "name": "colors",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/print_ascii_banner.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/print_ascii_banner.ts",
       "line": 8,
       "col": 0
     },
@@ -2093,12 +2093,12 @@
       "tags": [
         {
           "kind": "unsupported",
-          "value": "@copyright 2022 integer11. All rights reserved. MIT license."
+          "value": "@copyright 2022 integereleven. All rights reserved. MIT license."
         }
       ]
     },
     "importDef": {
-      "src": "file:///C:/repos/partic11e/repo-svc/deps.ts",
+      "src": "file:///C:/repos/intv8/repo-svc/deps.ts",
       "imported": "colors"
     }
   },
@@ -2106,7 +2106,7 @@
     "kind": "function",
     "name": "createFilename",
     "location": {
-      "filename": "file:///C:/repos/partic11e/repo-svc/src/create_filename.ts",
+      "filename": "file:///C:/repos/intv8/repo-svc/src/create_filename.ts",
       "line": 9,
       "col": 0
     },

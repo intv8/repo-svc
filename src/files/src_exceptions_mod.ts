@@ -5,9 +5,9 @@ export const srcExceptionModTs = createTemplate<
   PackagePropsPath,
   PackageProps
 >`/**
- * This file exports exceptions used by the the partic11e ${"pkg.name"} package
+ * This file exports exceptions used by the the intv8 ${"pkg.name"} package
  * and its peer and dependant packages.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 `;

@@ -6,6 +6,5 @@ export const srcExceptionsModTsEntry = createTemplate<
   ExceptionPropsPath,
   ExceptionProps
 >`
-//  Export exception ${"feature.name"} and related features.
 export * from "./${({ feature }) => createFilename(feature.name)}.ts";
 `;

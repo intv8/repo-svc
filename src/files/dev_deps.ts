@@ -2,13 +2,12 @@ import { createTemplate } from "../create_template.ts";
 import type { PackageProps, PackagePropsPath } from "../types/mod.ts";
 
 export const devDepsTs = createTemplate<PackagePropsPath, PackageProps>`/**
- * This file re-exports external development dependencies used by the partic11e
+ * This file re-exports external development dependencies used by the intv8
  * ${"pkg.name"} package.
  *
- * @copyright 2022 integer11. All rights reserved. MIT license.
+ * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
-//  Used for creating and setting up the test suite for a feature
 export {
   describe,
   it,
@@ -18,7 +17,6 @@ export {
   beforeEach,
 } from "std/testing/bdd.ts";
 
-//  Used for testing feature conditions or error tests not yet implemented
 export {
   assert,
   unimplemented,
