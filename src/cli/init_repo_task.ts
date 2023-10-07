@@ -120,7 +120,6 @@ export async function initRepoTask(
       year: (new Date().getFullYear()).toString(),
     },
   });
-  console.log(json)
   const parsedJson = JSON.parse(json);
 
   if (!Object.keys(config).length) {
