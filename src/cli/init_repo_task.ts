@@ -14,7 +14,6 @@ import {
   denoWorkflow,
   depsTs,
   devDepsTs,
-  importMapJson,
   license,
   readme,
   rootModTs,
@@ -55,7 +54,6 @@ const FILE_MAP = {
   "LICENSE": license,
   "README.md": readme,
   "CONTRIBUTING.md": contributing,
-  "import_map.json": importMapJson,
   ".github/workflows/deno.yml": denoWorkflow,
 };
 
@@ -122,6 +120,7 @@ export async function initRepoTask(
       year: (new Date().getFullYear()).toString(),
     },
   });
+  console.log(json)
   const parsedJson = JSON.parse(json);
 
   if (!Object.keys(config).length) {
