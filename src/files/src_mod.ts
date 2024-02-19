@@ -9,6 +9,5 @@ export const srcModTs = createTemplate<PackagePropsPath, PackageProps>`/**
 
 export * from "./types/mod.ts";
 export * from "./exceptions/mod.ts";
-export * from "./constants.ts";
-export * from "./version.ts";
+export { /* ExplicitExport */ } from "./constants.ts";
 `;

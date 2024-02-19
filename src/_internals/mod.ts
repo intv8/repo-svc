@@ -5,8 +5,10 @@
  * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
-//  For reading and writing the deno config file (`deno.jsonc`).
-export * from "./deno_config.ts";
+export {
+  denoConfigExists,
+  readDenoConfig,
+  writeDenoConfig,
+} from "./deno_config.ts";
 
-//  For getting the details of the repo.
-export * from "./get_repo_details.ts";
+export { getRepoDetails } from "./get_repo_details.ts";

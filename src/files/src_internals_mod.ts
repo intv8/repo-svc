@@ -11,5 +11,5 @@ export const srcInternalsModTs = createTemplate<
  * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
-export * from "./constants.ts";
+export { /* ExplicitExport */ } from "./constants.ts";
 `;

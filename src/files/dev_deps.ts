@@ -8,17 +8,7 @@ export const devDepsTs = createTemplate<PackagePropsPath, PackageProps>`/**
  * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
-export {
-  describe,
-  it,
-  afterAll,
-  afterEach,
-  beforeAll,
-  beforeEach,
-} from "std/testing/bdd.ts";
+export { describe, it } from "https://deno.land/std@0.213.0/testing/bdd.ts";
 
-export {
-  assert,
-  unimplemented,
-} from "std/testing/asserts.ts";
+export { assert, unimplemented } from "https://deno.land/std@0.213.0/assert/mod.ts";
 `;

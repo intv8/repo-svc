@@ -26,7 +26,6 @@ import {
   srcTypesInterfacesTs,
   srcTypesModTs,
   srcTypesTypesTs,
-  srcVersionTs,
 } from "../files/mod.ts";
 
 import {
@@ -47,7 +46,6 @@ const FILE_MAP = {
   "src/types/interfaces.ts": srcTypesInterfacesTs,
   "src/types/types.ts": srcTypesTypesTs,
   "src/types/mod.ts": srcTypesModTs,
-  "src/version.ts": srcVersionTs,
   "deps.ts": depsTs,
   "dev_deps.ts": devDepsTs,
   "mod.ts": rootModTs,
@@ -119,6 +117,12 @@ export async function initRepoTask(
       date: new Date().toISOString(),
       year: (new Date().getFullYear()).toString(),
     },
+    depVersions: {
+      std: "0.213.0",
+    },
+    devDepVersions: {
+      intv8: "dev",
+    },
   });
   const parsedJson = JSON.parse(json);
 
@@ -139,6 +143,16 @@ export async function initRepoTask(
     "Project version",
     config.version || "0.0.1",
   );
+
+  const stdVersion = cli.promptDefault(
+    "Deno standard library version",
+    config.depVersions.std || "0.213.0",
+  );
+
+  const intv8Version = cli.promptDefault(
+    "intv8 version",
+    config.devDepVersions.intv8 || "dev",
+  );
   const stable = cli.promptYesNo("Is this a stable release?");
   const deprecated = cli.promptYesNo("Is this release deprecated?");
   config.status = stable ? "stable" : deprecated ? "deprecated" : "unstable";
@@ -153,6 +167,12 @@ export async function initRepoTask(
     meta: {
       date: new Date().toISOString(),
       year: new Date().getFullYear().toString(),
+    },
+    depVersions: {
+      std: stdVersion ? `@${stdVersion}` : "",
+    },
+    devDepVersions: {
+      intv8: intv8Version ? `@${intv8Version}` : "",
     },
   };
 

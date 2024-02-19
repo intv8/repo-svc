@@ -89,7 +89,7 @@ export async function bumpVersionTask(
   cli.info(`Bumping version from ${config.version} to ${newVersion}.`);
   await writeDenoConfig(root, { ...config, version: newVersion });
 
-  const versionFile = await Deno.readTextFile(`${root}/src/version.ts`);
+  const versionFile = await Deno.readTextFile(`${root}/src/constants.ts`);
   const newVersionFile = versionFile.replace(
     /export const VERSION = "[0-9]+\.[0-9]+\.[0-9]+";/,
     `export const VERSION = "${newVersion}";`,

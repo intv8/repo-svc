@@ -7,4 +7,9 @@ export const srcConstants = createTemplate<PackagePropsPath, PackageProps>`/**
  *
  * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
+
+/**
+ * The current release version of the intv8 ${"pkg.name"} package.
+ */
+export const VERSION = "${"pkg.version"}";
 `;

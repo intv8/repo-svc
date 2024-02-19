@@ -5,4 +5,13 @@
  * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
-export * from "./types.ts";
+export type {
+  ExceptionProps,
+  ExceptionPropsPath,
+  FeatureProps,
+  FeaturePropsPath,
+  PackageProps,
+  PackagePropsPath,
+  Props,
+  TemplateCallback,
+} from "./types.ts";

@@ -32,7 +32,6 @@ export type ${"feature.name"}Init = TExceptionInit<{
  */
 function createMsgFromInit(init: ${"feature.name"}Init): string {
   //  TODO: create message from provided init properties.
-  //  e.g.
   //  const { prop1, prop2 } = init;
   //
   //  switch (true) {
@@ -43,8 +42,10 @@ function createMsgFromInit(init: ${"feature.name"}Init): string {
   //    case (!!prop2):
   //      return \`Prop2: \${prop2}\`;
   //    default:
-  return DEFAULT_MESSAGE;  
+  //      return DEFAULT_MESSAGE;
   //  }
+
+  return DEFAULT_MESSAGE;  
 }
 
 /**
@@ -72,8 +73,6 @@ export class ${"feature.name"}<T extends ${"feature.name"}Init = ${"feature.name
    * @param init The ${"feature.name"}Init properties.
    */
   constructor(message: string, init?: T);
-
-  //  Constructor overload implementation
   // deno-lint-ignore default-param-last
   constructor(msgOrInit: string | T = DEFAULT_MESSAGE, maybeInit?: T) {
     let message: string = msgOrInit as string;

@@ -8,7 +8,7 @@ export const srcTypesModTs = createTemplate<PackagePropsPath, PackageProps>`/**
  * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
-export * from "./enums.ts";
-export * from "./interfaces.ts";
-export * from "./types.ts";
+export { /* ExplicitExport */ } from "./enums.ts";
+export { /* ExplicitExport */ } from "./interfaces.ts";
+export { /* ExplicitExport */ } from "./types.ts";
 `;

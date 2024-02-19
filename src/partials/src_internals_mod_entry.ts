@@ -5,6 +5,6 @@ import type { ExceptionProps, ExceptionPropsPath } from "../types/mod.ts";
 export const srcInternalsModTsEntry = createTemplate<
   ExceptionPropsPath,
   ExceptionProps
->`
-export * from "./${({ feature }) => createFilename(feature.name)}.ts";
+>`export { ${"feature.name"} } from "./${({ feature }) =>
+  createFilename(feature.name)}.ts";
 `;

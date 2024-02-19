@@ -30,6 +30,12 @@ type MetaProps = {
     year: string;
     date: string;
   };
+  depVersions: {
+    std: string;
+  };
+  devDepVersions: {
+    intv8: string;
+  };
 };
 
 export type PackageProps = MetaProps & {

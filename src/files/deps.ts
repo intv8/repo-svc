@@ -7,6 +7,5 @@ export const depsTs = createTemplate<PackagePropsPath, PackageProps>`/**
  * @copyright 2022 integereleven. All rights reserved. MIT license.
  */
 
-export { Exception } from "p11/exceptions/mod.ts";
-export type { TExceptionInit } from "p11/exceptions/mod.ts";
+export { Exception, type TExceptionInit } from "https://denopkg.com/intv8/core/mod.ts";
 `;

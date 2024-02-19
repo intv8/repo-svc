@@ -21,7 +21,6 @@ import {
   testsFixturesFixtureTs,
 } from "../files/mod.ts";
 
-
 const PERMISSIONS: Deno.PermissionDescriptor[] = [
   {
     name: "read",
@@ -45,6 +44,12 @@ const FEATURE_REGEXES: Record<FeatureType, RegExp> = {
   c: /^[A-Z][a-zA-Z]+$/,
   f: /^[a-z][a-zA-Z]+$/,
   d: /^[a-z][a-zA-Z]+$/,
+};
+
+const FEATURE_NAMES: Record<FeatureType, string> = {
+  c: "class",
+  f: "function",
+  d: "decorator",
 };
 
 const FEATURE_CONTENTS = {
@@ -166,6 +171,12 @@ export async function addFeatureTask(
       date: new Date().toISOString(),
       year: new Date().getFullYear().toString(),
     },
+    depVersions: {
+      std: config.std,
+    },
+    devDepVersions: {
+      intv8: config.intv8,
+    },
     pkg: {
       description: config.description,
       name: config.name,
@@ -174,7 +185,7 @@ export async function addFeatureTask(
     },
     feature: {
       name: featureName,
-      type: featureType,
+      type: FEATURE_NAMES[featureType],
       description: featureDescription,
     },
   };
@@ -188,21 +199,31 @@ ${FEATURE_CONTENTS[featureType](props)}`;
   const modEntry = srcModTsEntry(props);
 
   const fileName = createFilename(featureName);
-  const filePath = `${dir}/${fileName}.ts`;
+  let filePath = `${dir}/${fileName}.ts`;
   const modPath = `${dir}/mod.ts`;
 
   const testContent = testsFeatureTs(props);
   const testFixtureContent = testsFixturesFixtureTs(props);
-  
+
   if (await exists(filePath)) {
     cli.warn(`${featureName} ${featureName} already exists.`);
 
     const overwrite = cli.promptYesNo("Overwrite? (y/n)");
 
-    if (!overwrite) {
-      cli.error("Feature not created.");
+    const getFilePath = async (): Promise<string> => {
+      filePath = cli.promptDefault("Enter a filename (no ext)", filePath);
 
-      Deno.exit(12);
+      if (await exists(filePath)) {
+        cli.warn(`${filePath} already exists.`);
+
+        return getFilePath();
+      }
+
+      return filePath;
+    };
+
+    if (!overwrite) {
+      filePath = await getFilePath();
     }
   }
 
