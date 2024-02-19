@@ -1,5 +1,5 @@
 /**
- * This file re-exports external dependencies used by the intv8 repo-svc.
+ * This file re-exports external dependencies used by the kz.io repo-svc.
  *
  * @copyright 2022 integereleven. All rights reserved. MIT license.
  */

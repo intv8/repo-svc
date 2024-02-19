@@ -37,10 +37,10 @@ export const denoJsonc = createTemplate<PackagePropsPath, PackageProps>`{
     }
   },
   "tasks": {
-		"bump-version": "deno run -A https://denopkg.com/intv8/repo-svc/cli/bump_version.ts",
-		"add-exception": "deno run -A https://denopkg.com/intv8/repo-svc/cli/add_exception.ts",
-		"add-feature": "deno run -A https://denopkg.com/intv8/repo-svc/cli/add_feature.ts",
-    "commit": "deno run -A https://denopkg.com/intv8/repo-svc/cli/commit.ts",
+		"bump-version": "deno run -A https://denopkg.com/kz-io/repo-svc/cli/bump_version.ts",
+		"add-exception": "deno run -A https://denopkg.com/kz-io/repo-svc/cli/add_exception.ts",
+		"add-feature": "deno run -A https://denopkg.com/kz-io/repo-svc/cli/add_feature.ts",
+    "commit": "deno run -A https://denopkg.com/kz-io/repo-svc/cli/commit.ts",
     "pre-commit": "deno fmt && deno lint && deno test && deno doc ./mod.ts --json > _doc.json",
     "cache": "deno cache --reload --lock=lock.json --lock-write deps.ts"
   }

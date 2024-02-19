@@ -5,7 +5,7 @@ export const srcTypesInterfacesTs = createTemplate<
   PackagePropsPath,
   PackageProps
 >`/**
- * This file exports interfaces used by the the intv8 ${"pkg.name"} package
+ * This file exports interfaces used by the the kz.io ${"pkg.name"} package
  * and its peer and dependant packages.
  *
  * For type aliases, see ./types.ts.

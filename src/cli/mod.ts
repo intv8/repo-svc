@@ -1,5 +1,5 @@
 /**
- * This file exports the cli tasks of the intv8 repo-svc package.
+ * This file exports the cli tasks of the kz.io repo-svc package.
  *
  * @copyright 2022 integereleven. All rights reserved. MIT license.
  */

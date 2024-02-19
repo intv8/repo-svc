@@ -5,7 +5,7 @@ export const srcTypesTypesTs = createTemplate<
   PackagePropsPath,
   PackageProps
 >`/**
- * This file exports type aliases used by the the intv8 ${"pkg.name"} package
+ * This file exports type aliases used by the the kz.io ${"pkg.name"} package
  * and its peer and dependant packages.
  *
  * For type aliases, see ./interfaces.ts.

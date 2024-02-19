@@ -1,5 +1,5 @@
 /**
- * This file exports the public API features of the intv8 {package.name} package.
+ * This file exports the public API features of the kz.io {package.name} package.
  *
  * @copyright 2022 integereleven. All rights reserved. MIT license.
  */

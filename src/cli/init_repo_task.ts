@@ -71,7 +71,7 @@ const PERMISSIONS: Deno.PermissionDescriptor[] = [
 ];
 
 /**
- * This function initializes a repo with the intv8 repo scaffold.
+ * This function initializes a repo with the kz.io repo scaffold.
  *
  * @param testing Whether or not the task is being run in a test environment.
  * @param logLevel The log level to use.
@@ -87,7 +87,7 @@ export async function initRepoTask(
   });
 
   cli.printBanner();
-  cli.describe("intv8 repo scaffolding tool.");
+  cli.describe("kz.io repo scaffolding tool.");
 
   const permissionsAccepted = await checkPermissions(PERMISSIONS);
   if (!permissionsAccepted) {
@@ -121,7 +121,7 @@ export async function initRepoTask(
       std: "0.213.0",
     },
     devDepVersions: {
-      intv8: "dev",
+      kzio: "dev",
     },
   });
   const parsedJson = JSON.parse(json);
@@ -149,9 +149,9 @@ export async function initRepoTask(
     config.depVersions.std || "0.213.0",
   );
 
-  const intv8Version = cli.promptDefault(
-    "intv8 version",
-    config.devDepVersions.intv8 || "dev",
+  const kzioVersion = cli.promptDefault(
+    "kz.io version",
+    config.devDepVersions.kz.io || "dev",
   );
   const stable = cli.promptYesNo("Is this a stable release?");
   const deprecated = cli.promptYesNo("Is this release deprecated?");
@@ -172,7 +172,7 @@ export async function initRepoTask(
       std: stdVersion ? `@${stdVersion}` : "",
     },
     devDepVersions: {
-      intv8: intv8Version ? `@${intv8Version}` : "",
+      kzio: kzioVersion ? `@${kzioVersion}` : "",
     },
   };
 

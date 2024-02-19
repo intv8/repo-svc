@@ -1,5 +1,5 @@
 /**
- * This file exports type aliases used by the the intv8 repo-svc package
+ * This file exports type aliases used by the the kz.io repo-svc package
  * and its peer and dependant packages.
  *
  * For interfaces, see ./interfaces.ts
@@ -34,7 +34,7 @@ type MetaProps = {
     std: string;
   };
   devDepVersions: {
-    intv8: string;
+    kzio: string;
   };
 };
 

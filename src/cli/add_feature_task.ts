@@ -149,7 +149,7 @@ export async function addFeatureTask(
   });
 
   cli.printBanner();
-  cli.describe("intv8 feature tool.");
+  cli.describe("kz.io feature tool.");
 
   const permissionsAccepted = await checkPermissions(PERMISSIONS);
 
@@ -175,7 +175,7 @@ export async function addFeatureTask(
       std: config.std,
     },
     devDepVersions: {
-      intv8: config.intv8,
+      kzio: config.kzio,
     },
     pkg: {
       description: config.description,

@@ -68,7 +68,7 @@ export async function bumpVersionTask(
   });
 
   cli.printBanner();
-  cli.describe("intv8 repo versioning tool.");
+  cli.describe("kz.io repo versioning tool.");
 
   const permissionsAccepted = await checkPermissions(PERMISSIONS);
 

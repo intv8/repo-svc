@@ -129,7 +129,7 @@ export async function commitTask(testing = false, logLevel = 3): Promise<void> {
   });
 
   cli.printBanner();
-  cli.describe("intv8 repo commit tool.");
+  cli.describe("kz.io repo commit tool.");
 
   const permissionsAccepted = await checkPermissions(PERMISSIONS);
 

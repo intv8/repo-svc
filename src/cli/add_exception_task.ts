@@ -143,7 +143,7 @@ export async function addExceptionTask(
   });
 
   cli.printBanner();
-  cli.describe("intv8 exception tool.");
+  cli.describe("kz.io exception tool.");
 
   const permissionsAccepted = await checkPermissions(PERMISSIONS);
 
@@ -159,6 +159,12 @@ export async function addExceptionTask(
   const exceptionCode = getExceptionCode(cli);
 
   const props = {
+    depVersions: {
+      std: config.std,
+    },
+    devDepVersions: {
+      kzio: config.kzio,
+    },
     meta: {
       date: new Date().toISOString(),
       year: new Date().getFullYear().toString(),

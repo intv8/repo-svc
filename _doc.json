@@ -1,280 +1,5 @@
 [
   {
-    "kind": "function",
-    "name": "createTemplate",
-    "location": {
-      "filename": "file:///C:/repos/intv8/repo-svc/src/create_template.ts",
-      "line": 8,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "functionDef": {
-      "params": [
-        {
-          "kind": "identifier",
-          "name": "strings",
-          "optional": false,
-          "tsType": {
-            "repr": "TemplateStringsArray",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "TemplateStringsArray"
-            }
-          }
-        },
-        {
-          "kind": "rest",
-          "arg": {
-            "kind": "identifier",
-            "name": "refs",
-            "optional": false,
-            "tsType": null
-          },
-          "tsType": {
-            "repr": "",
-            "kind": "array",
-            "array": {
-              "repr": "",
-              "kind": "parenthesized",
-              "parenthesized": {
-                "repr": "",
-                "kind": "union",
-                "union": [
-                  {
-                    "repr": "P",
-                    "kind": "typeRef",
-                    "typeRef": {
-                      "typeParams": null,
-                      "typeName": "P"
-                    }
-                  },
-                  {
-                    "repr": "TemplateCallback",
-                    "kind": "typeRef",
-                    "typeRef": {
-                      "typeParams": [
-                        {
-                          "repr": "T",
-                          "kind": "typeRef",
-                          "typeRef": {
-                            "typeParams": null,
-                            "typeName": "T"
-                          }
-                        }
-                      ],
-                      "typeName": "TemplateCallback"
-                    }
-                  }
-                ]
-              }
-            }
-          }
-        }
-      ],
-      "returnType": {
-        "repr": "TemplateCallback",
-        "kind": "typeRef",
-        "typeRef": {
-          "typeParams": [
-            {
-              "repr": "T",
-              "kind": "typeRef",
-              "typeRef": {
-                "typeParams": null,
-                "typeName": "T"
-              }
-            }
-          ],
-          "typeName": "TemplateCallback"
-        }
-      },
-      "hasBody": true,
-      "isAsync": false,
-      "isGenerator": false,
-      "typeParams": [
-        {
-          "name": "P",
-          "constraint": {
-            "repr": "string",
-            "kind": "keyword",
-            "keyword": "string"
-          }
-        },
-        {
-          "name": "T",
-          "constraint": {
-            "repr": "Props",
-            "kind": "typeRef",
-            "typeRef": {
-              "typeParams": null,
-              "typeName": "Props"
-            }
-          }
-        }
-      ]
-    }
-  },
-  {
-    "kind": "function",
-    "name": "checkPermissions",
-    "location": {
-      "filename": "file:///C:/repos/intv8/repo-svc/src/check_permissions.ts",
-      "line": 15,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "functionDef": {
-      "params": [
-        {
-          "kind": "identifier",
-          "name": "permissions",
-          "optional": false,
-          "tsType": {
-            "repr": "",
-            "kind": "array",
-            "array": {
-              "repr": "Deno.PermissionDescriptor",
-              "kind": "typeRef",
-              "typeRef": {
-                "typeParams": null,
-                "typeName": "Deno.PermissionDescriptor"
-              }
-            }
-          }
-        }
-      ],
-      "returnType": {
-        "repr": "Promise",
-        "kind": "typeRef",
-        "typeRef": {
-          "typeParams": [
-            {
-              "repr": "boolean",
-              "kind": "keyword",
-              "keyword": "boolean"
-            }
-          ],
-          "typeName": "Promise"
-        }
-      },
-      "hasBody": true,
-      "isAsync": true,
-      "isGenerator": false,
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "function",
-    "name": "printAsciiBanner",
-    "location": {
-      "filename": "file:///C:/repos/intv8/repo-svc/src/print_ascii_banner.ts",
-      "line": 40,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "Prints a formatted intv8 banner with a tool name.\n",
-      "tags": [
-        {
-          "kind": "param",
-          "name": "name",
-          "doc": "The name of the tool to print in the banner."
-        }
-      ]
-    },
-    "functionDef": {
-      "params": [
-        {
-          "kind": "identifier",
-          "name": "name",
-          "optional": false,
-          "tsType": {
-            "repr": "string",
-            "kind": "keyword",
-            "keyword": "string"
-          }
-        }
-      ],
-      "returnType": {
-        "repr": "void",
-        "kind": "keyword",
-        "keyword": "void"
-      },
-      "hasBody": true,
-      "isAsync": false,
-      "isGenerator": false,
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "function",
-    "name": "parseArgs",
-    "location": {
-      "filename": "file:///C:/repos/intv8/repo-svc/src/parse_args.ts",
-      "line": 3,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "functionDef": {
-      "params": [
-        {
-          "kind": "identifier",
-          "name": "args",
-          "optional": false,
-          "tsType": {
-            "repr": "",
-            "kind": "array",
-            "array": {
-              "repr": "string",
-              "kind": "keyword",
-              "keyword": "string"
-            }
-          }
-        }
-      ],
-      "returnType": {
-        "repr": "",
-        "kind": "typeLiteral",
-        "typeLiteral": {
-          "methods": [],
-          "properties": [
-            {
-              "name": "testing",
-              "params": [],
-              "computed": false,
-              "optional": false,
-              "tsType": {
-                "repr": "boolean",
-                "kind": "keyword",
-                "keyword": "boolean"
-              },
-              "typeParams": []
-            },
-            {
-              "name": "logLevel",
-              "params": [],
-              "computed": false,
-              "optional": false,
-              "tsType": {
-                "repr": "number",
-                "kind": "keyword",
-                "keyword": "number"
-              },
-              "typeParams": []
-            }
-          ],
-          "callSignatures": [],
-          "indexSignatures": []
-        }
-      },
-      "hasBody": true,
-      "isAsync": false,
-      "isGenerator": false,
-      "typeParams": []
-    }
-  },
-  {
     "kind": "typeAlias",
     "name": "ExceptionProps",
     "location": {
@@ -745,7 +470,7 @@
     },
     "declarationKind": "export",
     "jsDoc": {
-      "doc": "This file exports type aliases used by the the intv8 repo-svc package\nand its peer and dependant packages.\n\nFor interfaces, see ./interfaces.ts\n",
+      "doc": "This file exports type aliases used by the the kz.io repo-svc package\nand its peer and dependant packages.\n\nFor interfaces, see ./interfaces.ts\n",
       "tags": [
         {
           "kind": "unsupported",
@@ -799,72 +524,15 @@
   },
   {
     "kind": "function",
-    "name": "createFilename",
+    "name": "commitTask",
     "location": {
-      "filename": "file:///C:/repos/intv8/repo-svc/src/create_filename.ts",
-      "line": 9,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "functionDef": {
-      "params": [
-        {
-          "kind": "identifier",
-          "name": "name",
-          "optional": false,
-          "tsType": {
-            "repr": "string",
-            "kind": "keyword",
-            "keyword": "string"
-          }
-        }
-      ],
-      "returnType": {
-        "repr": "string",
-        "kind": "keyword",
-        "keyword": "string"
-      },
-      "hasBody": true,
-      "isAsync": false,
-      "isGenerator": false,
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "variable",
-    "name": "VERSION",
-    "location": {
-      "filename": "file:///C:/repos/intv8/repo-svc/src/constants.ts",
-      "line": 11,
-      "col": 13
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "The current release version of the intv8 repo-svc package."
-    },
-    "variableDef": {
-      "tsType": {
-        "repr": "0.0.0",
-        "kind": "literal",
-        "literal": {
-          "kind": "string",
-          "string": "0.0.0"
-        }
-      },
-      "kind": "const"
-    }
-  },
-  {
-    "kind": "function",
-    "name": "initRepoTask",
-    "location": {
-      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
-      "line": 79,
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/commit_task.ts",
+      "line": 114,
       "col": 0
     },
     "declarationKind": "export",
     "jsDoc": {
-      "doc": "This function initializes a repo with the intv8 repo scaffold.\n",
+      "doc": "This function helps generate a commit message, optionally prompting the user to commit.\n",
       "tags": [
         {
           "kind": "param",
@@ -994,84 +662,15 @@
   },
   {
     "kind": "function",
-    "name": "addFeatureTask",
+    "name": "initRepoTask",
     "location": {
-      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_feature_task.ts",
-      "line": 131,
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/init_repo_task.ts",
+      "line": 79,
       "col": 0
     },
     "declarationKind": "export",
     "jsDoc": {
-      "doc": "This function creates a new feature in the repo and adds it to the mod file.\n",
-      "tags": [
-        {
-          "kind": "param",
-          "name": "testing",
-          "doc": "Whether the task is being run in testing mode."
-        },
-        {
-          "kind": "param",
-          "name": "logLevel",
-          "doc": "The log level to use."
-        }
-      ]
-    },
-    "functionDef": {
-      "params": [
-        {
-          "kind": "assign",
-          "left": {
-            "kind": "identifier",
-            "name": "testing",
-            "optional": false,
-            "tsType": null
-          },
-          "right": "[UNSUPPORTED]",
-          "tsType": null
-        },
-        {
-          "kind": "assign",
-          "left": {
-            "kind": "identifier",
-            "name": "logLevel",
-            "optional": false,
-            "tsType": null
-          },
-          "right": "[UNSUPPORTED]",
-          "tsType": null
-        }
-      ],
-      "returnType": {
-        "repr": "Promise",
-        "kind": "typeRef",
-        "typeRef": {
-          "typeParams": [
-            {
-              "repr": "void",
-              "kind": "keyword",
-              "keyword": "void"
-            }
-          ],
-          "typeName": "Promise"
-        }
-      },
-      "hasBody": true,
-      "isAsync": true,
-      "isGenerator": false,
-      "typeParams": []
-    }
-  },
-  {
-    "kind": "function",
-    "name": "commitTask",
-    "location": {
-      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/commit_task.ts",
-      "line": 114,
-      "col": 0
-    },
-    "declarationKind": "export",
-    "jsDoc": {
-      "doc": "This function helps generate a commit message, optionally prompting the user to commit.\n",
+      "doc": "This function initializes a repo with the kz.io repo scaffold.\n",
       "tags": [
         {
           "kind": "param",
@@ -1195,6 +794,407 @@
       },
       "hasBody": true,
       "isAsync": true,
+      "isGenerator": false,
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "function",
+    "name": "addFeatureTask",
+    "location": {
+      "filename": "file:///C:/repos/intv8/repo-svc/src/cli/add_feature_task.ts",
+      "line": 131,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "This function creates a new feature in the repo and adds it to the mod file.\n",
+      "tags": [
+        {
+          "kind": "param",
+          "name": "testing",
+          "doc": "Whether the task is being run in testing mode."
+        },
+        {
+          "kind": "param",
+          "name": "logLevel",
+          "doc": "The log level to use."
+        }
+      ]
+    },
+    "functionDef": {
+      "params": [
+        {
+          "kind": "assign",
+          "left": {
+            "kind": "identifier",
+            "name": "testing",
+            "optional": false,
+            "tsType": null
+          },
+          "right": "[UNSUPPORTED]",
+          "tsType": null
+        },
+        {
+          "kind": "assign",
+          "left": {
+            "kind": "identifier",
+            "name": "logLevel",
+            "optional": false,
+            "tsType": null
+          },
+          "right": "[UNSUPPORTED]",
+          "tsType": null
+        }
+      ],
+      "returnType": {
+        "repr": "Promise",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "void",
+              "kind": "keyword",
+              "keyword": "void"
+            }
+          ],
+          "typeName": "Promise"
+        }
+      },
+      "hasBody": true,
+      "isAsync": true,
+      "isGenerator": false,
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "function",
+    "name": "createTemplate",
+    "location": {
+      "filename": "file:///C:/repos/intv8/repo-svc/src/create_template.ts",
+      "line": 8,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "functionDef": {
+      "params": [
+        {
+          "kind": "identifier",
+          "name": "strings",
+          "optional": false,
+          "tsType": {
+            "repr": "TemplateStringsArray",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "TemplateStringsArray"
+            }
+          }
+        },
+        {
+          "kind": "rest",
+          "arg": {
+            "kind": "identifier",
+            "name": "refs",
+            "optional": false,
+            "tsType": null
+          },
+          "tsType": {
+            "repr": "",
+            "kind": "array",
+            "array": {
+              "repr": "",
+              "kind": "parenthesized",
+              "parenthesized": {
+                "repr": "",
+                "kind": "union",
+                "union": [
+                  {
+                    "repr": "P",
+                    "kind": "typeRef",
+                    "typeRef": {
+                      "typeParams": null,
+                      "typeName": "P"
+                    }
+                  },
+                  {
+                    "repr": "TemplateCallback",
+                    "kind": "typeRef",
+                    "typeRef": {
+                      "typeParams": [
+                        {
+                          "repr": "T",
+                          "kind": "typeRef",
+                          "typeRef": {
+                            "typeParams": null,
+                            "typeName": "T"
+                          }
+                        }
+                      ],
+                      "typeName": "TemplateCallback"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "returnType": {
+        "repr": "TemplateCallback",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "T",
+              "kind": "typeRef",
+              "typeRef": {
+                "typeParams": null,
+                "typeName": "T"
+              }
+            }
+          ],
+          "typeName": "TemplateCallback"
+        }
+      },
+      "hasBody": true,
+      "isAsync": false,
+      "isGenerator": false,
+      "typeParams": [
+        {
+          "name": "P",
+          "constraint": {
+            "repr": "string",
+            "kind": "keyword",
+            "keyword": "string"
+          }
+        },
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "Props",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": null,
+              "typeName": "Props"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "variable",
+    "name": "VERSION",
+    "location": {
+      "filename": "file:///C:/repos/intv8/repo-svc/src/constants.ts",
+      "line": 11,
+      "col": 13
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The current release version of the kz.io repo-svc package."
+    },
+    "variableDef": {
+      "tsType": {
+        "repr": "0.0.0",
+        "kind": "literal",
+        "literal": {
+          "kind": "string",
+          "string": "0.0.0"
+        }
+      },
+      "kind": "const"
+    }
+  },
+  {
+    "kind": "function",
+    "name": "createFilename",
+    "location": {
+      "filename": "file:///C:/repos/intv8/repo-svc/src/create_filename.ts",
+      "line": 9,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "functionDef": {
+      "params": [
+        {
+          "kind": "identifier",
+          "name": "name",
+          "optional": false,
+          "tsType": {
+            "repr": "string",
+            "kind": "keyword",
+            "keyword": "string"
+          }
+        }
+      ],
+      "returnType": {
+        "repr": "string",
+        "kind": "keyword",
+        "keyword": "string"
+      },
+      "hasBody": true,
+      "isAsync": false,
+      "isGenerator": false,
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "function",
+    "name": "printAsciiBanner",
+    "location": {
+      "filename": "file:///C:/repos/intv8/repo-svc/src/print_ascii_banner.ts",
+      "line": 37,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Prints a formatted kz.io banner with a tool name.\n",
+      "tags": [
+        {
+          "kind": "param",
+          "name": "name",
+          "doc": "The name of the tool to print in the banner."
+        }
+      ]
+    },
+    "functionDef": {
+      "params": [
+        {
+          "kind": "identifier",
+          "name": "name",
+          "optional": false,
+          "tsType": {
+            "repr": "string",
+            "kind": "keyword",
+            "keyword": "string"
+          }
+        }
+      ],
+      "returnType": {
+        "repr": "void",
+        "kind": "keyword",
+        "keyword": "void"
+      },
+      "hasBody": true,
+      "isAsync": false,
+      "isGenerator": false,
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "function",
+    "name": "checkPermissions",
+    "location": {
+      "filename": "file:///C:/repos/intv8/repo-svc/src/check_permissions.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "functionDef": {
+      "params": [
+        {
+          "kind": "identifier",
+          "name": "permissions",
+          "optional": false,
+          "tsType": {
+            "repr": "",
+            "kind": "array",
+            "array": {
+              "repr": "Deno.PermissionDescriptor",
+              "kind": "typeRef",
+              "typeRef": {
+                "typeParams": null,
+                "typeName": "Deno.PermissionDescriptor"
+              }
+            }
+          }
+        }
+      ],
+      "returnType": {
+        "repr": "Promise",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "boolean",
+              "kind": "keyword",
+              "keyword": "boolean"
+            }
+          ],
+          "typeName": "Promise"
+        }
+      },
+      "hasBody": true,
+      "isAsync": true,
+      "isGenerator": false,
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "function",
+    "name": "parseArgs",
+    "location": {
+      "filename": "file:///C:/repos/intv8/repo-svc/src/parse_args.ts",
+      "line": 3,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "functionDef": {
+      "params": [
+        {
+          "kind": "identifier",
+          "name": "args",
+          "optional": false,
+          "tsType": {
+            "repr": "",
+            "kind": "array",
+            "array": {
+              "repr": "string",
+              "kind": "keyword",
+              "keyword": "string"
+            }
+          }
+        }
+      ],
+      "returnType": {
+        "repr": "",
+        "kind": "typeLiteral",
+        "typeLiteral": {
+          "methods": [],
+          "properties": [
+            {
+              "name": "testing",
+              "params": [],
+              "computed": false,
+              "optional": false,
+              "tsType": {
+                "repr": "boolean",
+                "kind": "keyword",
+                "keyword": "boolean"
+              },
+              "typeParams": []
+            },
+            {
+              "name": "logLevel",
+              "params": [],
+              "computed": false,
+              "optional": false,
+              "tsType": {
+                "repr": "number",
+                "kind": "keyword",
+                "keyword": "number"
+              },
+              "typeParams": []
+            }
+          ],
+          "callSignatures": [],
+          "indexSignatures": []
+        }
+      },
+      "hasBody": true,
+      "isAsync": false,
       "isGenerator": false,
       "typeParams": []
     }
